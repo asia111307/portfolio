@@ -1,0 +1,44 @@
+.about {
+	margin-bottom: 250px;
+	border: none;
+}
+.about img {
+	width: 100%;
+	margin-top: 145px;
+	padding-left: 75px;
+	border-radius: 3%;
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+	.about {
+		font-size: 1.3rem;
+		margin: 0 80px;
+		padding: 80px;
+	}
+	.about p {
+		margin-left: 60px;
+	}
+	.about img {
+		width: 45%;
+		text-align: center;
+		margin-left: 26%;
+		margin-top: 70px;
+		padding-left: 0;
+		margin-bottom: 80px;
+	}
+}
+
+@media (max-width: 767px) {
+	.about {
+		margin: 0 20px;
+		font-size: 1.1rem;
+	}
+	.about img {
+		max-width: 80%;
+		text-align: center;
+		margin-left: 10%;
+		margin-top: 70px;
+		padding-left: 0;
+	}
+}
