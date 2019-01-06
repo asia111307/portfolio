@@ -1,3 +1,4 @@
+import { APP_INITIALIZER } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -16,6 +17,8 @@ import { AppSkillsComponent } from './app-skills/app-skills.component';
 import { AppJumbotronComponent } from './app-jumbotron/app-jumbotron.component';
 import { AppHomeComponent } from './app-home/app-home.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { ChangeLangService } from './change-lang.service';
 
 
 const components = [
@@ -41,7 +44,9 @@ const components = [
     BrowserModule,
     CommonModule,
     AppRoutingModule,
+    ScrollToModule.forRoot(),
   ],
+  providers: [ChangeLangService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

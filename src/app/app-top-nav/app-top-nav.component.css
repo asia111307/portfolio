@@ -1,17 +1,23 @@
-nav a:link, nav a:visited, nav a:active, nav a:hover {
+.navigation {
+	width: 100%;
+	height: 50px;
+	background-color: rgba(255, 255, 255, 0.7);
+	position: fixed;
+	top:0;
+}
+nav a:link, nav a:visited, nav a:active {
 	text-decoration: none;
-	color: white;
+	color: rgb(45, 134, 229);
 }
 
 nav {
 	text-align: center;
-	background-color: rgba(76, 76, 75, 0.50);
 	position: fixed;
-  top:0;
-	width: 100%;
+  	top:0;
+	width: 95%;
 	z-index: 1;
-	margin-right: 0;
-	margin-left: 0;
+	margin: 0 2.5% 0 2.5%;
+	border-bottom: 1px lightgrey solid;
 }
 nav ul {
 	list-style-type: none;
@@ -30,34 +36,54 @@ nav li {
 	font-size: 20px;
 }
 nav a {
-	color: white;
+	color: rgb(45, 134, 229);
 	text-decoration: none;
 	padding: 0;
 }
-nav li:hover, nav ul ul li:hover {
-	background: #FAF5F0;
+nav li:hover, nav ul ul li:hover, nav li:hover a  {
+	/*background: #FAF5F0;*/
 	cursor: pointer;
-	color: #3D5061;
+	color: rgb(234, 211, 221);
 }
-nav li:hover a {
-  cursor: pointer;
-	color: #3D5061;
-	}
 nav ul ul {
 	display: none;
 	position: absolute;
 }
 nav ul ul li {
 	display: block;
-	background-color: rgba(76, 76, 75, 0.5);
+	background-color: rgba(255, 255, 255, 0.8);
 	transition: 0.3s;
-	color: white;
+	color: rgb(45, 134, 229);
 }
 nav ul ul li a {
-	color: white;
+	color: rgb(45, 134, 229);
 }
 nav li:hover ul {
 	display: block;
+}
+
+.home {
+	float: left;
+	width: 38px;
+	height: 38px;
+	margin: 6px 20px 0 6px;
+	background-image: url("../../assets/pics/home.png");
+	background-size: cover;
+	opacity: 0.8;
+}
+.lang-to-pl, .lang-to-eng  {
+	float: left;
+	width: 40px;
+	height: 36px;
+	margin: 7px 20px 0 7px;
+	background-size: cover;
+	opacity: 0.8;
+}
+.lang-to-eng {
+	background-image: url("../../assets/pics/eng.png");
+}
+.lang-to-pl {
+	background-image: url("../../assets/pics/pl.png");
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -67,7 +93,12 @@ nav li:hover ul {
 }
 
 @media (max-width: 767px) {
-    nav {
+	.navigation {
+		width: 100%;
+		height: 150px;
+	}
+
+	nav, .navigation {
     	position: static;
     }
     nav ul {
