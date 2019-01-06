@@ -4,3 +4,9 @@
 .project-car {
     padding: 0 140px 0 30px;
 }
+.photo-1, .photo-2 {
+    background-image: url("../../assets/pics/skrz.jpg");
+}
+.project-car-inner {
+    max-width: 340px;
+}

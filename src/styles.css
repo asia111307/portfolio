@@ -76,7 +76,7 @@ a:link, a:visited, a:active, a:hover {
 	text-align: left;
 	font-size: 35px;
 	font-weight: 400;
-	margin: 40px 0 0 50px;
+	margin: 40px 0 0 100px;
 	padding-top: 10px;
 	color: grey;
 }
@@ -99,6 +99,18 @@ a:link, a:visited, a:active, a:hover {
 .carousel-inner {
 	min-height: 600px;
 }
+
+.carousel-inner .small {
+	background-size: cover;
+	width: 450px;
+	height: 650px;
+}
+
+.project-car-inner {
+	background-size: cover;
+	height: 650px;
+}
+
 
 
 /* PROJECT TABS, SCREEN AND BUTTONS */
@@ -154,13 +166,10 @@ a:link, a:visited, a:active, a:hover {
 }
 
 
-.project-container {
+.project-container, .project-container-inner {
 	display: flex;
 	align-items: center;
 	align-content: center;
-}
-.project-container-inner {
-	align-items: normal;
 }
 .project-desc {
 	width: 65%;

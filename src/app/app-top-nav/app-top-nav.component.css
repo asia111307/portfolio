@@ -71,6 +71,7 @@ nav li:hover ul {
 	background-image: url("../../assets/pics/home.png");
 	background-size: cover;
 	opacity: 0.8;
+	cursor: pointer;
 }
 .lang-to-pl, .lang-to-eng  {
 	float: left;
@@ -79,6 +80,7 @@ nav li:hover ul {
 	margin: 10px ;
 	background-size: cover;
 	opacity: 0.8;
+	cursor: pointer;
 }
 .lang-to-eng {
 	background-image: url("../../assets/pics/eng.png");

@@ -2,11 +2,14 @@
 	margin-bottom: 250px;
 	border: none;
 }
-.about img {
-	width: 100%;
-	margin-top: 145px;
-	padding-left: 75px;
+.about .img {
+	width: 290px;
+	height: 270px;
 	border-radius: 3%;
+	margin-left: 10%;
+	margin-top: 30%;
+	background-image: url("../../assets/pics/photo.jpg");
+	background-size: cover;
 }
 
 
