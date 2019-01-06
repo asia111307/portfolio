@@ -1,4 +1,4 @@
-import { NgModule }             from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {AppAboutComponent} from './app-about/app-about.component';
 import {AppDevComponent} from './app-dev/app-dev.component';
@@ -13,8 +13,7 @@ const routes: Routes = [
   { path: 'ux', component: AppUxComponent },
   { path: 'dev', component: AppDevComponent },
   { path: 'others', component: AppOthersComponent },
-  { path: 'home', component: AppHomeComponent }
-
+  { path: 'home', component: AppHomeComponent },
 ];
 
 @NgModule({

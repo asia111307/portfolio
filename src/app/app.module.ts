@@ -1,4 +1,3 @@
-import { APP_INITIALIZER } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -19,7 +18,9 @@ import { AppHomeComponent } from './app-home/app-home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { ChangeLangService } from './change-lang.service';
-
+import { AppUxScreenComponent} from './app-ux-screen/app-ux-screen.component';
+import {AppDevScreenComponent} from './app-dev-screen/app-dev-screen.component';
+import {AppOthersScreenComponent} from './app-others-screen/app-others-screen.component';
 
 const components = [
   AppComponent,
@@ -35,7 +36,10 @@ const components = [
   AppSkillsComponent,
   AppUxComponent,
   AppJumbotronComponent,
-  AppHomeComponent
+  AppHomeComponent,
+  AppUxScreenComponent,
+  AppDevScreenComponent,
+  AppOthersScreenComponent
 ];
 
 @NgModule({

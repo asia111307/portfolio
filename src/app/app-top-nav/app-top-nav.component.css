@@ -4,18 +4,19 @@
 	background-color: rgba(255, 255, 255, 0.7);
 	position: fixed;
 	top:0;
+	z-index: 1;
 }
 nav a:link, nav a:visited, nav a:active {
 	text-decoration: none;
-	color: rgb(45, 134, 229);
+	color: grey;
 }
 
 nav {
+	z-index: 1;
 	text-align: center;
 	position: fixed;
   	top:0;
 	width: 95%;
-	z-index: 1;
 	margin: 0 2.5% 0 2.5%;
 	border-bottom: 1px lightgrey solid;
 }
@@ -36,14 +37,14 @@ nav li {
 	font-size: 20px;
 }
 nav a {
-	color: rgb(45, 134, 229);
+	color: grey;
 	text-decoration: none;
 	padding: 0;
 }
 nav li:hover, nav ul ul li:hover, nav li:hover a  {
 	/*background: #FAF5F0;*/
 	cursor: pointer;
-	color: rgb(234, 211, 221);
+	color: rgb(45, 134, 229);
 }
 nav ul ul {
 	display: none;
@@ -53,10 +54,10 @@ nav ul ul li {
 	display: block;
 	background-color: rgba(255, 255, 255, 0.8);
 	transition: 0.3s;
-	color: rgb(45, 134, 229);
+	color: grey;
 }
 nav ul ul li a {
-	color: rgb(45, 134, 229);
+	color: grey;
 }
 nav li:hover ul {
 	display: block;
@@ -64,18 +65,18 @@ nav li:hover ul {
 
 .home {
 	float: left;
-	width: 38px;
-	height: 38px;
-	margin: 6px 20px 0 6px;
+	width: 30px;
+	height: 30px;
+	margin: 10px 10px 0 10px;
 	background-image: url("../../assets/pics/home.png");
 	background-size: cover;
 	opacity: 0.8;
 }
 .lang-to-pl, .lang-to-eng  {
 	float: left;
-	width: 40px;
-	height: 36px;
-	margin: 7px 20px 0 7px;
+	width: 30px;
+	height: 30px;
+	margin: 10px ;
 	background-size: cover;
 	opacity: 0.8;
 }

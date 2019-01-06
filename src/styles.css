@@ -1,3 +1,5 @@
+/* GEHERAL */
+
 body {
 	font-family: Helvetica Neue, sans-serif;
 	margin: 0;
@@ -49,112 +51,150 @@ body {
 
 a:link, a:visited, a:active, a:hover {
 	text-decoration: none;
+	outline: none;
 }
 
 .p-style {
 	font-size: 23px;
-  font-weight: 300;
+  	font-weight: 300;
 	color: grey;
 	text-align: justify;
+	margin: 0;
+	padding: 0;
 }
 
 .h-style {
 	text-align: center;
 	font-size: 50px;
 	font-weight: 400;
-	margin-bottom: 120px;
-	padding-top: 79px;
+	margin: 40px 0;
+	padding-top: 50px;
+	color: grey;
+}
+
+.h2-style {
+	text-align: left;
+	font-size: 35px;
+	font-weight: 400;
+	margin: 40px 0 0 50px;
+	padding-top: 10px;
+	color: grey;
 }
 .section-style {
 	margin-top: 25px;
-	margin-bottom: 53px;
-}
-.carousela {
-	margin-bottom: 100px;
+	margin-bottom: 25px;
 }
 
-.ux-project{
-	position: relative;
-	border-radius: 3%;
-	padding: 0;
-	margin: 80px 0;
-	object-fit: cover;
+.carousel-control-prev-icon {
+	background-image: url("/assets/pics/l-arrow.png") !important;
+	width: 30px;
+	height: 30px;
 }
-.ux-layer {
-	width: 100%;
-	height: 100%;
-	background: rgba(255,255,255,0.85);
-	text-align: center;
-	display: none;
-	position: absolute;
-	border-radius: 3%;
+
+.carousel-control-next-icon {
+	background-image: url("/assets/pics/rarrow.png") !important;
+	width: 30px;
+	height: 30px;
 }
-.ux-project:hover .ux-layer {
+.carousel-inner {
+	min-height: 600px;
+}
+
+
+/* PROJECT TABS, SCREEN AND BUTTONS */
+
+.region-main {
+	width: 95%;
+	margin: 0 auto;
+	min-height: 600px;
 	display: block;
+}
+
+.tabs {
+	text-align: center;
+}
+
+.screen {
+	display: block;
+	/*border: solid 1px lightgrey;
+	border-bottom: none;
+	border-right: none;
+	border-top-left-radius: 60px; */
+}
+[class$="tab"] {
+	height: 80px;
+	width: 20%;
+	display: inline-block;
+	text-align: center;
+	line-height: 80px;
+}
+[class$="tab"] p {
+	text-align: center;
+	font-weight: 200;
+}
+[class$="tab"]:hover {
 	cursor: pointer;
 }
-.ux-project img {
-	max-height: 580px;
-	width: 100%;
-	border-radius: 0;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	object-fit: cover;
+[class$="tab"]:hover p, .tab-active:hover p {
+	color: rgb(45, 134, 229);
+	font-weight: 400;
 }
-.uxth {
-	font-size: 20px;
+
+[class^="example"] {
+	margin-top: 1px;
 }
-.titles {
-	background-color: #3D5061;
-	color: white;
-	height: 93px;
-	margin-bottom: 45px;
+
+.tab-active {
+	border-bottom: 1px grey solid;
+	cursor: pointer;
 }
-.uxphoto {
-	height: 500px;
-	overflow: hidden;
-	margin-top: 0;
-	box-sizing: none;
+.tab-active p {
+	font-weight: 400;
+	color: rgb(45, 134, 229);
 }
-.uxx, .codee, .photoo, .kwee{
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
+
+
+.project-container {
+	display: flex;
+	align-items: center;
+	align-content: center;
 }
-.uxx {
-	background-image: url("/assets/pics/ux.jpg");
+.project-container-inner {
+	align-items: normal;
 }
-.codee {
-	background-image: url("/assets/pics/code.png");
+.project-desc {
+	width: 65%;
+	padding: 0 50px;
+	display: inline-block;
 }
-.photoo {
-	background-image: url("/assets/pics/15a.jpg");
-	background-size: cover;
+.project-car {
+	width: 35%;
+	padding: 0 50px;
+	display: inline-block;
 }
-.kwee {
-	background-image: url("/assets/pics/p2.jpg");
-}
-.example, .carousela .example-1, .carousela .example-2, .carousela .example-3, .carousela .example-4 {
-  min-height: 300px;
-  text-align: center;
-  object-fit: cover;
-}
-.carousel-caption h1 {
-	font-size: 30px;
-	font-family: Helvetica Neue, sans-serif;
-	color: black;
-}
-.carousel-caption p {
-	font-size: 20px;
-	font-family: Helvetica Neue, sans-serif;
-	color: grey;
-}
-.caption {
-	padding: 10% 23%;
-	font-size: 24px;
-	text-align: justify;
-	color: #5C5B5C;
+.view-project, .view-cv {
+	width: 300px;
+	height: 55px;
+	font-family: Quicksand, sans-serif;
+	font-size: 18px;
 	font-weight: 300;
+	border-radius: 1%;
+	transition: 0.8s;
+	cursor: pointer;
+	border: none;
+	background-color: rgba(45, 134, 229, 0.6);
+	background-position: 100% 0;
+	background-size: 300%;
+	background-image: linear-gradient(45deg, #FAF5F0 50%, transparent 50%);
+	padding: 15px 50px;
+	margin: 25px 12px 25px 0px;
+	outline: none;
+	color: white;
+}
+
+.view-project:hover, .view-cv:hover  {
+	color: rgb(76, 76, 75);
+	background-position: 0 100%;
 }
 
 
@@ -176,19 +216,6 @@ a:link, a:visited, a:active, a:hover {
 	.h-style {
 		margin-bottom: 80px;
 	}
-
-	.ux-project {
-		padding-bottom: 80px;
-		padding-left: 0;
-		text-align: center;
-	}
-	.caption {
-		padding: 10%;
-		font-size: 22px;
-	}
-	.uxphoto {
-		margin-bottom: -30px;
-	}
 }
 
 @media (max-width: 767px) {
@@ -205,32 +232,11 @@ a:link, a:visited, a:active, a:hover {
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
 
-
 	.h-style {
 		font-size: 40px;
 		margin-bottom: 40px;
 	}
-	.ux-project h1 {
-		font-size: 30px;
-		text-align: center;
-	}
 	.icon-btn {
 		font-size: 33px;
-	}
-	.ux-project {
-		padding-bottom: 80px;
-		padding-left: 0;
-	}
-	.ux-layer {
-		margin: 0;
-	}
-	.uxphoto {
-		height: 250px;
-		margin-bottom: -90px;
-		margin-top: 60px;
-	}
-	.caption {
-		padding: 10%;
-		font-size: 18px;
 	}
 }
