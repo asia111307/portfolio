@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ChangeLangService} from '../change-lang.service';
 
 @Component({
   selector: 'app-ux',
@@ -7,6 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppUxComponent implements OnInit {
 
+    currentLang: string;
+    currentPack: any;
+    maintitle: string;
+    title1: string;
+    title2: string;
+    title3: string;
+    title4: string;
+
+    constructor(private changeLangService: ChangeLangService) {
+        this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; this.setTexts(); } );
+        this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; this.setTexts(); } );
+    }
+    setTexts() {
+        this.maintitle = this.currentPack[35];
+        this.title1 = this.currentPack[36];
+        this.title2 = this.currentPack[37];
+        this.title3 = this.currentPack[38];
+        this.title4 = this.currentPack[39];
+    }
     showProjectDetails = function() {
         const content = document.getElementsByClassName('example-ux');
         for (let i = 0; i < content.length; i++) {

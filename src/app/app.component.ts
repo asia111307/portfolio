@@ -1,7 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {ChangeLangService} from './change-lang.service';
-import {STRINGS_ENG} from '../strings_ENG';
-import {STRINGS_PL} from '../strings_PL';
 
 @Component({
   selector: 'app-root',
@@ -9,19 +7,14 @@ import {STRINGS_PL} from '../strings_PL';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  currentLang: string;
+  currentPack: any;
   title = 'mill';
-  constructor(private changeLangService: ChangeLangService) {}
-  setDefaultLang() {
-      /* window.onload = function() {
-          const elementsENG = document.getElementsByClassName('lang-eng');
-          const elementsPL = document.getElementsByClassName('lang-pl');
-          for (let i = 0; i < elementsENG.length; i++) {
-              (<HTMLElement>elementsENG[i]).style.display = 'none';
-          }
-          for (let i = 0; i < elementsPL.length; i++) {
-              (<HTMLElement>elementsPL[i]).style.display = 'block';
-          }
-      }; */
+   constructor(private changeLangService: ChangeLangService) {
+       this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; });
+       this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; });
+   }
+  setDefaultLangEmitters() {
         const elementENG = document.getElementsByClassName('lang-switch-to-eng');
         const elementPL = document.getElementsByClassName('lang-switch-to-pl');
         for (let i = 0; i < elementENG.length; i++) {
@@ -32,7 +25,7 @@ export class AppComponent implements OnInit {
         }
   };
   ngOnInit() {
-    this.setDefaultLang();
+    this.setDefaultLangEmitters();
   }
 }
 

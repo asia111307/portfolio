@@ -55,7 +55,7 @@ a:link, a:visited, a:active, a:hover {
 }
 
 .p-style {
-	font-size: 23px;
+	font-size: 20px;
   	font-weight: 300;
 	color: grey;
 	text-align: justify;
@@ -65,7 +65,7 @@ a:link, a:visited, a:active, a:hover {
 
 .h-style {
 	text-align: center;
-	font-size: 50px;
+	font-size: 40px;
 	font-weight: 400;
 	margin: 40px 0;
 	padding-top: 50px;
@@ -74,7 +74,7 @@ a:link, a:visited, a:active, a:hover {
 
 .h2-style {
 	text-align: left;
-	font-size: 35px;
+	font-size: 30px;
 	font-weight: 400;
 	margin: 40px 0 0 100px;
 	padding-top: 10px;
@@ -138,7 +138,7 @@ a:link, a:visited, a:active, a:hover {
 	width: 20%;
 	display: inline-block;
 	text-align: center;
-	line-height: 80px;
+	line-height: 60px;
 }
 [class$="tab"] p {
 	text-align: center;
@@ -153,7 +153,7 @@ a:link, a:visited, a:active, a:hover {
 }
 
 [class^="example"] {
-	margin-top: 1px;
+	margin-top: 5px;
 }
 
 .tab-active {

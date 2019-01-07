@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ChangeLangService} from '../change-lang.service';
 
 @Component({
   selector: 'app-dev',
@@ -6,6 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app-dev.component.css']
 })
 export class AppDevComponent implements OnInit {
+    currentLang: string;
+    currentPack: any;
+    maintitle: string;
+    title1: string;
+    title2: string;
+    constructor(private changeLangService: ChangeLangService) {
+        this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; this.setTexts(); } );
+        this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; this.setTexts(); } );
+    }
+    setTexts() {
+        this.maintitle = this.currentPack[2];
+        this.title1 = this.currentPack[3];
+        this.title2 = this.currentPack[4];
+    }
 
     showProjectDetails = function() {
         const content = document.getElementsByClassName('example-dev');

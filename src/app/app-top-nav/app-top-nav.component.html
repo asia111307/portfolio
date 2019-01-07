@@ -5,15 +5,15 @@
 		<a class="lang-switch-to-eng" (click)="changeLangToENG()"><div class="lang-to-eng"></div></a>
 		<a class="lang-switch-to-pl" (click)="changeLangToPL()"><div class="lang-to-pl"></div></a>
 		<ul>
-			<a [ngx-scroll-to]="'#aboutme'" routerLink="/about"><li> O mnie </li></a>
-				<li><a [ngx-scroll-to]="'#ux'" routerLink="/ux"> Projekty </a>
+			<a [ngx-scroll-to]="'#aboutme'" routerLink="/about"><li> {{ aboutme }} </li></a>
+				<li><a [ngx-scroll-to]="'#ux'" routerLink="/ux"> {{ projects }} </a>
 					<ul>
-						<a [ngx-scroll-to]="'#ux'" routerLink="/ux"><li> User Experience </li></a>
-						<a [ngx-scroll-to]="'#dev'" routerLink="/dev"><li> Programowanie </li></a>
-						<a [ngx-scroll-to]="'#others'" routerLink="/others"><li> Pozostałe </li></a>
+						<a [ngx-scroll-to]="'#ux'" routerLink="/ux"><li> {{ ux }} </li></a>
+						<a [ngx-scroll-to]="'#dev'" routerLink="/dev"><li> {{ dev }} </li></a>
+						<a [ngx-scroll-to]="'#others'" routerLink="/others"><li> {{ others }} </li></a>
 					</ul>
 				</li>
-			<a [ngx-scroll-to]="'#footer'"><li> Kontakt </li></a>
+			<a [ngx-scroll-to]="'#footer'"><li> {{ contact }} </li></a>
 		</ul>
 	  </div>
 	</nav>

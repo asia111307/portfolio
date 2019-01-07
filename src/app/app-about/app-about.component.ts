@@ -1,39 +1,22 @@
-import {Component, OnChanges, OnInit, Input} from '@angular/core';
-import {STRINGS_ENG} from '../../strings_ENG';
-import {STRINGS_PL} from '../../strings_PL';
+import {Component} from '@angular/core';
 import {ChangeLangService} from '../change-lang.service';
-import {SimpleChanges} from '@angular/core';
 
 @Component({
   selector: 'app-about',
   templateUrl: './app-about.component.html',
   styleUrls: ['./app-about.component.css']
 })
-export class AppAboutComponent implements OnInit, OnChanges {
-  @Input() currentLang: string;
+export class AppAboutComponent {
+  currentLang: string;
+  currentPack: any;
   header: string;
   description: string;
-  constructor(private changeLangService: ChangeLangService) { }
+  constructor(private changeLangService: ChangeLangService) {
+      this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; this.setTexts(); } );
+      this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; this.setTexts(); } );
+  }
   setTexts() {
-    if (this.currentLang === 'PL') {
-      this.header = STRINGS_PL[0];
-      this.description = STRINGS_PL[1];
-    } else if (this.currentLang === 'ENG') {
-        this.header = STRINGS_ENG[0];
-        this.description = STRINGS_ENG[1];
-    }
-  }
-  ngOnInit() {
-      this.currentLang = this.changeLangService.currentLang;
-      this.setTexts();
-      this.changeLangService.getCurrentLanguage$.subscribe(
-          (currentLang) => {
-              this.currentLang = this.changeLangService.getLang();
-          }
-      );
-  }
-
-  ngOnChanges(changes: SimpleChanges) {
-      this.setTexts();
+      this.header = this.currentPack[0];
+      this.description = this.currentPack[1];
   }
 }

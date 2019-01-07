@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { AppUxScreenComponent } from './app-ux-screen.component';
+import {AppUxScreenComponent} from './app-ux-screen.component';
 
 describe('AppUxScreenComponent', () => {
   let component: AppUxScreenComponent;

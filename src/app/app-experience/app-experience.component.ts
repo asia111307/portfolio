@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ChangeLangService} from '../change-lang.service';
 
 @Component({
   selector: 'app-experience',
@@ -6,6 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app-experience.component.css']
 })
 export class AppExperienceComponent implements OnInit {
+    currentLang: string;
+    currentPack: any;
+    maintitle: string;
+    description: string;
+    button: string;
+
+    constructor(private changeLangService: ChangeLangService) {
+        this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; this.setTexts(); } );
+        this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; this.setTexts(); } );
+    }
+    setTexts() {
+        this.maintitle = this.currentPack[9];
+        this.description = this.currentPack[10];
+        this.button = this.currentPack[11];
+    }
   toggleOpen = function() {
       const elements = document.getElementsByClassName('view-cv');
       for (let i = 0; i < elements.length; i++) {

@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { AppUxComponent } from './app-ux.component';
+import {AppUxComponent} from './app-ux.component';
 
 describe('AppUxComponent', () => {
   let component: AppUxComponent;
