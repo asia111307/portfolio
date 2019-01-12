@@ -46,7 +46,7 @@ export const STRINGS_ENG = {
     44: 'ENG Opierając się na wynikach badań, które sugerują, że proces kupowania biletów kolejowych nie należy do najprzyjeniejszych i najłatwiejszych, przeprowadzone zostało badanie potrzeb podróżujących PKP oraz dokonano próby zaproponowania i&nbsp;zaprojektowania rozwiązania na zidentyfikowane problemy.\n',
     45: 'ENG Zobacz projekt',
     46: 'ENG Zajęcia z Projektowania Usług pozwoliły na zmierzenie się z&nbsp;próbą zaprojektowania czegoś innego, niż produkt cyfrowy. Motywem przedownim został temat niedziel wolnych od handlu, a sposród grupu wszystkich potencjalnych interesariuszy jako grupę odbiorców wybrano właścicieli miejsc rozrywkowych i&nbsp;rekreacyjnych. Badanie potrzeb tej grupy ostatecznie zawęziło grupę docelową do właścicieli escape roomów, dla których została przygotowana usługa pod postacią wyniesienia tradycyjnie pojmowanego roomu poza mury lokalu, czyli na przykład do zoo, ogrodu botanicznego czy zamku.',
-    47: 'ENG ',
-    48: 'ENG ',
+    47: 'ENG Zagraj w milionerów',
+    48: 'ENG Aby zagrać w grę, kliknij w Run nad terminalem. Gra uruchomi się po pobraniu wymaganych paczek.',
     49: 'ENG ',
 };
