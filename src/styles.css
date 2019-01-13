@@ -1,5 +1,7 @@
 /* GEHERAL */
-
+* {
+	box-sizing: border-box;
+}
 *:focus, *:active {
 	outline: none;
 }
@@ -12,9 +14,6 @@ body {
 	width: 90%;
 	max-width: 1200px;
 	margin: 0 auto;
-}
-* {
-    box-sizing: border-box;
 }
 .row:before, .row:after {
 	content: "";
@@ -78,31 +77,8 @@ a:link, a:visited, a:active, a:hover {
 .section-style {
 	margin: 5% 0;
 }
-.carousel-control-prev-icon {
-	background-image: url("/assets/pics/l-arrow.png") !important;
-	width: 30px;
-	height: 30px;
-}
-.carousel-control-next-icon {
-	background-image: url("/assets/pics/rarrow.png") !important;
-	width: 30px;
-	height: 30px;
-	margin-right: 0;
-}
-.carousel-inner {
-	width: 70%;
-	margin: 0 auto;
-	border: 10px solid lightgrey;
-	border-radius: 5%;
-}
-.carousel-inner .small {
-	background-size: cover;
-	background-position: center;
-	height: 600px;
 
-}
-
-/* PROJECT TABS, SCREEN AND BUTTONS */
+/* PROJECT TABS, SCREEN, CAROUSELS AND BUTTONS */
 
 .region-main {
 	width: 95%;
@@ -110,13 +86,8 @@ a:link, a:visited, a:active, a:hover {
 	min-height: 600px;
 	display: block;
 }
-
 .tabs {
 	text-align: center;
-}
-
-.screen {
-	display: block;
 }
 [class$="tab"] {
 	height: 80px;
@@ -136,11 +107,6 @@ a:link, a:visited, a:active, a:hover {
 	color: rgb(45, 134, 229);
 	font-weight: 400;
 }
-
-[class^="example"] {
-	margin-top: 3%;
-}
-
 .tab-active {
 	border-bottom: 1px grey solid;
 	cursor: pointer;
@@ -149,7 +115,12 @@ a:link, a:visited, a:active, a:hover {
 	font-weight: 400;
 	color: rgb(45, 134, 229);
 }
-
+.screen {
+	display: block;
+}
+[class^="example"] {
+	margin-top: 3%;
+}
 .project-container, .project-container-inner {
 	display: flex;
 	align-items: center;
@@ -164,6 +135,28 @@ a:link, a:visited, a:active, a:hover {
 	width: 40%;
 	display: inline-block;
 	text-align: center;
+}
+.carousel-control-prev-icon {
+	background-image: url("/assets/pics/l-arrow.png") !important;
+	width: 30px;
+	height: 30px;
+}
+.carousel-control-next-icon {
+	background-image: url("/assets/pics/rarrow.png") !important;
+	width: 30px;
+	height: 30px;
+	margin-right: 0;
+}
+.carousel-inner {
+	width: 75%;
+	margin: 0 auto;
+	border: 10px solid lightgrey;
+	border-radius: 5%;
+}
+.carousel-inner .small {
+	background-size: cover;
+	background-position: center;
+	height: 650px;
 }
 .view-project, .view-cv {
 	font-family: Helvetica, sans-serif;
@@ -184,7 +177,6 @@ a:link, a:visited, a:active, a:hover {
 	outline: none;
 	color: white;
 }
-
 .view-project:hover, .view-cv:hover  {
 	color: rgb(76, 76, 75);
 	background-position: 0 100%;

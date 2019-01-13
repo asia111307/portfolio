@@ -1,5 +1,8 @@
-.project-desc-skrz, .project-desc-esc {
+.project-desc-skrz {
     padding-right: 3%;
+}
+.project-desc-esc {
+    padding-right: 0;
 }
 .project-desc-info, .project-car-info {
     width: 50%
@@ -7,34 +10,33 @@
 .info-photo {
     background-image: url("../../assets/pics/info/i1.jpg");
     background-size: cover;
-    height: 395px;
+    height: 400px;
     border: 10px solid lightgrey;
     border-radius: 5%;
 }
 .project-desc-esc {
-    width: 40%;
+    width: 35%;
 }
 .project-car-esc {
-    width: 60%;
+    width: 65%;
 }
 .carousel-inner-esc, .carousel-inner-esc .small {
-    width: 80%;
-    height: 425px;
+    height: 450px;
 }
 .skrz-photo1 {
-    background-image: url("../../assets/pics/skrzappek/s1.jpg");
+    background-image: url("../../assets/pics/skrzappek/s1.png");
 }
 .skrz-photo2 {
-    background-image: url("../../assets/pics/skrzappek/s2.jpg");
+    background-image: url("../../assets/pics/skrzappek/s2.png");
 }
 .skrz-photo3 {
-    background-image: url("../../assets/pics/skrzappek/s3.jpg");
+    background-image: url("../../assets/pics/skrzappek/s3.png");
 }
 .skrz-photo4 {
-    background-image: url("../../assets/pics/skrzappek/s4.jpg");
+    background-image: url("../../assets/pics/skrzappek/s4.png");
 }
 .skrz-photo5 {
-    background-image: url("../../assets/pics/skrzappek/s5.jpg");
+    background-image: url("../../assets/pics/skrzappek/s5.png");
 }
 .skrz-photo6 {
     background-image: url("../../assets/pics/skrzappek/s6.jpg");
@@ -46,7 +48,7 @@
     background-image: url("../../assets/pics/skrzappek/s8.jpg");
 }
 .skrz-photo9 {
-    background-image: url("../../assets/pics/skrzappek/s9.jpg");
+    background-image: url("../../assets/pics/skrzappek/s9.png");
 }
 .skrz-photo10 {
     background-image: url("../../assets/pics/skrzappek/s10.jpg");
@@ -76,15 +78,48 @@
     background-image: url("../../assets/pics/skrzappek/s18.jpg");
 }
 .skrz-photo19 {
-    background-image: url("../../assets/pics/skrzappek/s19.png");
+    background-image: url("../../assets/pics/skrzappek/s19.jpg");
 }
 .skrz-photo20 {
-    background-image: url("../../assets/pics/skrzappek/s20.png");
+    background-image: url("../../assets/pics/skrzappek/s20.jpg");
 }
 .skrz-photo21 {
-    background-image: url("../../assets/pics/skrzappek/s21.png");
+    background-image: url("../../assets/pics/skrzappek/s21.jpg");
 }
 .skrz-photo22 {
-    background-image: url("../../assets/pics/skrzappek/s22.png");
+    background-image: url("../../assets/pics/skrzappek/s22.jpg");
 }
 
+.esc-photo1 {
+    background-image: url("../../assets/pics/esc/e1.jpg");
+}
+.esc-photo2 {
+    background-image: url("../../assets/pics/esc/e2.jpg");
+}
+.esc-photo3 {
+    background-image: url("../../assets/pics/esc/e3.jpg");
+}
+.esc-photo4 {
+    background-image: url("../../assets/pics/esc/e4.jpg");
+}
+.esc-photo5 {
+    background-image: url("../../assets/pics/esc/e5.png");
+}
+.esc-photo6 {
+    background-image: url("../../assets/pics/esc/e6.png");
+}
+.esc-photo7 {
+    background-image: url("../../assets/pics/esc/e7.png");
+}
+.esc-photo8 {
+    background-image: url("../../assets/pics/esc/e8.png");
+}
+/*.esc-photo9 {
+    background-image: url("../../assets/pics/esc/e9.png");
+}
+.esc-photo10 {
+    background-image: url("../../assets/pics/esc/e10.png");
+}
+.esc-photo11 {
+    background-image: url("../../assets/pics/esc/e11.png");
+}*/
