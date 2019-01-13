@@ -40,8 +40,26 @@ export class AppUxScreenComponent implements OnInit {
         this.description4 = this.currentPack[46];
         this.button4 = this.currentPack[45];
     }
-
-  ngOnInit() {
+    toggleOpen() {
+        const element = document.getElementsByClassName('info-button')[0];
+        (<HTMLElement>element).addEventListener('click', function () {
+            (<HTMLElement>this).classList.toggle('open');
+            const content = (<HTMLElement>this).nextElementSibling;
+            if ((<HTMLElement>this).classList.contains('open')) {
+                (<HTMLElement>content).style.display = 'block';
+                const clicked = this;
+                const opened = document.getElementsByClassName('open');
+                for (let k = 0; k < opened.length; k++) {
+                    if (opened[k] !== clicked) {
+                        (<HTMLElement>opened[k]).click();
+                    }
+                }
+            } else {
+                (<HTMLElement>content).style.display = 'none';
+            }
+        });
+    };
+    ngOnInit() {
   }
 
 }

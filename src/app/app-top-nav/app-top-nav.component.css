@@ -10,7 +10,6 @@ nav a:link, nav a:visited, nav a:active {
 	text-decoration: none;
 	color: grey;
 }
-
 nav {
 	z-index: 1;
 	text-align: center;
@@ -25,7 +24,6 @@ nav ul {
 	padding: 0;
 	margin: 0;
 	float: right;
-
 }
 nav li {
 	display: inline-block;
@@ -42,7 +40,6 @@ nav a {
 	padding: 0;
 }
 nav li:hover, nav ul ul li:hover, nav li:hover a  {
-	/*background: #FAF5F0;*/
 	cursor: pointer;
 	color: rgb(45, 134, 229);
 }
@@ -62,25 +59,17 @@ nav ul ul li a {
 nav li:hover ul {
 	display: block;
 }
-
-.home {
+.home, .lang-to-pl, .lang-to-eng {
 	float: left;
 	width: 30px;
 	height: 30px;
-	margin: 10px 10px 0 10px;
-	background-image: url("../../assets/pics/home.png");
+	margin: 1%;
 	background-size: cover;
 	opacity: 0.8;
 	cursor: pointer;
 }
-.lang-to-pl, .lang-to-eng  {
-	float: left;
-	width: 30px;
-	height: 30px;
-	margin: 10px ;
-	background-size: cover;
-	opacity: 0.8;
-	cursor: pointer;
+.home {
+	background-image: url("../../assets/pics/home.png");
 }
 .lang-to-eng {
 	background-image: url("../../assets/pics/eng.png");

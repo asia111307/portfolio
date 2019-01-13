@@ -9,18 +9,16 @@
 	overflow: hidden;
 }
 .slogan {
-	padding-top: 40px;
+	padding-top: 5%;
 	width: 45vw;
 	height: 44vh;
 	float: left;
 	background-color: rgba(255, 255, 255, 0.3);
 }
 .jumbotron .slogan h1 {
-	margin: 10px;
 	font-size: 50px;
 	font-weight: 400;
 	color: white;
-	padding-top: 12px;
 }
 .jumbotron button {
     font-size: 25px;

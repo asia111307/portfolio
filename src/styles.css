@@ -56,65 +56,51 @@ a:link, a:visited, a:active, a:hover {
 	text-decoration: none;
 	outline: none;
 }
-
 .p-style {
 	font-size: 20px;
   	font-weight: 300;
 	color: grey;
 	text-align: justify;
-	margin: 0;
-	padding: 0;
 }
-
 .h-style {
 	text-align: center;
 	font-size: 40px;
 	font-weight: 400;
-	margin: 40px 0;
-	padding-top: 50px;
+	margin: 5% 0;
 	color: grey;
 }
-
 .h2-style {
 	text-align: left;
 	font-size: 30px;
 	font-weight: 400;
-	margin: 40px 0 0 100px;
-	padding-top: 10px;
 	color: grey;
 }
 .section-style {
-	margin-top: 25px;
-	margin-bottom: 25px;
+	margin: 5% 0;
 }
-
 .carousel-control-prev-icon {
 	background-image: url("/assets/pics/l-arrow.png") !important;
 	width: 30px;
 	height: 30px;
 }
-
 .carousel-control-next-icon {
 	background-image: url("/assets/pics/rarrow.png") !important;
 	width: 30px;
 	height: 30px;
+	margin-right: 0;
 }
 .carousel-inner {
-	min-height: 600px;
+	width: 70%;
+	margin: 0 auto;
+	border: 10px solid lightgrey;
+	border-radius: 5%;
 }
-
 .carousel-inner .small {
 	background-size: cover;
-	width: 450px;
-	height: 650px;
+	background-position: center;
+	height: 600px;
+
 }
-
-.project-car-inner {
-	background-size: cover;
-	height: 650px;
-}
-
-
 
 /* PROJECT TABS, SCREEN AND BUTTONS */
 
@@ -152,7 +138,7 @@ a:link, a:visited, a:active, a:hover {
 }
 
 [class^="example"] {
-	margin-top: 5px;
+	margin-top: 3%;
 }
 
 .tab-active {
@@ -164,21 +150,20 @@ a:link, a:visited, a:active, a:hover {
 	color: rgb(45, 134, 229);
 }
 
-
 .project-container, .project-container-inner {
 	display: flex;
 	align-items: center;
 	align-content: center;
 }
 .project-desc {
-	width: 65%;
-	padding: 0 50px;
+	width: 60%;
+	padding: 0 5%;
 	display: inline-block;
 }
 .project-car {
-	width: 35%;
-	padding: 0 50px;
+	width: 40%;
 	display: inline-block;
+	text-align: center;
 }
 .view-project, .view-cv {
 	font-family: Helvetica, sans-serif;

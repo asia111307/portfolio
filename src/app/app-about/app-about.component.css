@@ -1,10 +1,8 @@
 .about {
-	margin-bottom: 250px;
-	border: none;
+	margin-bottom: 5%;
 }
 .about .img {
-	width: 290px;
-	height: 270px;
+	height: 50%;
 	border-radius: 3%;
 	margin-left: 10%;
 	margin-top: 30%;
@@ -16,32 +14,10 @@
 @media (min-width: 768px) and (max-width: 1199px) {
 	.about {
 		font-size: 1.3rem;
-		margin: 0 80px;
-		padding: 80px;
-	}
-	.about p {
-		margin-left: 60px;
-	}
-	.about img {
-		width: 45%;
-		text-align: center;
-		margin-left: 26%;
-		margin-top: 70px;
-		padding-left: 0;
-		margin-bottom: 80px;
 	}
 }
-
 @media (max-width: 767px) {
 	.about {
-		margin: 0 20px;
 		font-size: 1.1rem;
-	}
-	.about img {
-		max-width: 80%;
-		text-align: center;
-		margin-left: 10%;
-		margin-top: 70px;
-		padding-left: 0;
 	}
 }
