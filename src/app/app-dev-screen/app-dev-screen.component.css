@@ -1,9 +1,22 @@
 .photo-1, .photo-2, .photo-3 {
     background-image: url("../../assets/pics/skrz.jpg");
 }
-.millionaire {
-    display: none;;
+.millionaire, .view-game-programs {
+    display: none;
 }
 .project-desc {
     width: 100%;
+}
+.project-desc-p {
+    width: 30%;
+    display: block;
+}
+.project-car-p {
+    width: 70%;
+}
+.project-desc-p-p {
+    width: auto;
+}
+.project-desc-p-p {
+    margin-left: 5%;
 }

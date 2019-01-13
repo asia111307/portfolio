@@ -12,7 +12,6 @@ export class AppExperienceComponent implements OnInit {
     maintitle: string;
     description: string;
     button: string;
-
     constructor(private changeLangService: ChangeLangService) {
         this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; this.setTexts(); } );
         this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; this.setTexts(); } );
@@ -22,7 +21,7 @@ export class AppExperienceComponent implements OnInit {
         this.description = this.currentPack[10];
         this.button = this.currentPack[11];
     }
-  toggleOpen = function() {
+  toggleOpen() {
       const elements = document.getElementsByClassName('view-cv');
       for (let i = 0; i < elements.length; i++) {
           (<HTMLElement>elements[i]).addEventListener('click', function () {
@@ -42,7 +41,7 @@ export class AppExperienceComponent implements OnInit {
               }
           });
       }
-  };
+  }
   ngOnInit() {
       this.toggleOpen();
   }
