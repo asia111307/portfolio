@@ -130,4 +130,7 @@
         display: block;
         font-size: 25px;
     }
+    .demo, .github {
+        width: 100px;
+    }
 }

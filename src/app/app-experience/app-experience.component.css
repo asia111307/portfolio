@@ -43,7 +43,7 @@
 }
 .tree-box-inner {
     width: 40%;
-    height: 170px;
+    min-height: 170px;
     border: 2px solid rgba(45, 134, 229, 0.6);
     transition: 0.3s;
     padding: 20px 30px;
@@ -173,13 +173,6 @@
 }
 
 @media (max-width: 1060px) {
-  .iframe {
-        min-height: 790px;
-        padding-top: 145%;
-  }
-    .view-cv {
-        font-size: 24px;
-    }
     .triangle, .triangle-left, .triangle-right, .experience-line-div {
         display: none;
     }
