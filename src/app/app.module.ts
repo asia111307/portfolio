@@ -21,6 +21,7 @@ import {ChangeLangService} from './change-lang.service';
 import {AppUxScreenComponent} from './app-ux-screen/app-ux-screen.component';
 import {AppDevScreenComponent} from './app-dev-screen/app-dev-screen.component';
 import {AppOthersScreenComponent} from './app-others-screen/app-others-screen.component';
+import {AppProjectsComponent} from './app-projects/app-projects.component';
 
 const components = [
   AppComponent,
@@ -39,7 +40,8 @@ const components = [
   AppHomeComponent,
   AppUxScreenComponent,
   AppDevScreenComponent,
-  AppOthersScreenComponent
+  AppOthersScreenComponent,
+  AppProjectsComponent
 ];
 
 @NgModule({

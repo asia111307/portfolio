@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ChangeLangService} from '../change-lang.service';
 
 @Component({
@@ -6,27 +6,13 @@ import {ChangeLangService} from '../change-lang.service';
   templateUrl: './app-top-nav.component.html',
   styleUrls: ['./app-top-nav.component.css']
 })
-export class AppTopNavComponent {
+export class AppTopNavComponent implements OnInit {
     currentLang: string;
     currentPack: any;
-    aboutme: string;
-    projects: string;
-    ux: string;
-    dev: string;
-    others: string;
-    contact: string;
 
     constructor(private changeLangService: ChangeLangService) {
-        this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; this.setTexts(); } );
-        this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; this.setTexts(); } );
-    }
-    setTexts() {
-        this.aboutme = this.currentPack[30];
-        this.projects = this.currentPack[31];
-        this.ux = this.currentPack[32];
-        this.dev = this.currentPack[33];
-        this.others = this.currentPack[15];
-        this.contact = this.currentPack[34];
+        this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; } );
+        this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; } );
     }
   changeLangToENG() {
       this.changeLangService.changeLangToENG();
@@ -34,5 +20,19 @@ export class AppTopNavComponent {
   changeLangToPL() {
       this.changeLangService.changeLangToPL();
   }
-
+  ngOnInit() {
+        document.getElementById('nav-icon1').addEventListener('click', function() {
+            this.classList.toggle('open');
+            const menu_items = document.getElementsByClassName('nav-hidden');
+            const menu = this;
+            for (let i=0; i< menu_items.length; i++) {
+                if (menu.classList.contains('open')) {
+                    (<HTMLElement>menu_items[i]).style.display = 'flex';
+                } else {
+                    (<HTMLElement>menu_items[i]).style.display = 'none';
+                }
+            }
+        });
+        document.getElementById('nav-icon1').click()
+    }
 }

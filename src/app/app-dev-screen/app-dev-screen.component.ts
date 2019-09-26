@@ -9,45 +9,9 @@ import {ChangeLangService} from '../change-lang.service';
 export class AppDevScreenComponent implements OnInit {
     currentLang: string;
     currentPack: any;
-    maintitle1: string;
-    maintitle2: string;
-    description1: string;
-    button1: string;
-    button2: string;
-    description2: string;
-    button_old: string;
-    description1_old: string;
-    button_p1: string;
-    button_p2: string;
-    button_p3: string;
-    button_p4: string;
-    button_p5: string;
-    button_p6: string;
-    button_p7: string;
-    button_p8: string;
-    ter_description: string;
     constructor(private changeLangService: ChangeLangService) {
-        this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; this.setTexts(); } );
-        this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; this.setTexts(); } );
-    }
-    setTexts() {
-        this.maintitle1 = this.currentPack[3];
-        this.maintitle2 = this.currentPack[4];
-        this.description1 = this.currentPack[5];
-        this.button1 = this.currentPack[6];
-        this.description2 = this.currentPack[7];
-        this.button2 = this.currentPack[8];
-        this.button_old = this.currentPack[47];
-        this.description1_old = this.currentPack[48];
-        this.button_p1 = this.currentPack[49];
-        this.button_p2 = this.currentPack[50];
-        this.button_p3 = this.currentPack[51];
-        this.button_p4 = this.currentPack[52];
-        this.button_p5 = this.currentPack[53];
-        this.button_p6 = this.currentPack[54];
-        this.button_p7 = this.currentPack[55];
-        this.button_p8 = this.currentPack[56];
-        this.ter_description = '';
+        this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; } );
+        this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; } );
     }
     toggleOpen() {
         const element = document.getElementsByClassName('view-game')[0];

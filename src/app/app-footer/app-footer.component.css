@@ -1,60 +1,4 @@
-.social {
-	margin: 0;
-	text-align: center;
-	box-sizing: content-box;
-}
-.social a {
-	padding: 0 10px;
-}
 
-.social h2 {
-	color: #505050;
-	font-size: 22px;
-}
-.icon-btn {
-	height: 40px;
-	width: 40px;
-	border: 0;
-	color: #FFFFFF;
-	border-radius: 50%;
-	margin: 10px;
-	cursor: pointer;
-	font-size: 20px;
-	line-height: 40px;
-	text-align: center;
-}
-.facebook {
-	color: #3B5998;
-}
-.instagram {
-	color: #5C3D2E;
-}
-.github {
-	color: #4183C4;
-}
-.linkedin {
-	color: #007BB6;
-}
-.icon-btn:hover {
-	transform: scale(1.10);
-	color: #FFFFFF;
-}
-.facebook:hover {
-	background-color: #3B5998;
-}
-.instagram:hover {
-	background-color: #5C3D2E;
-}
-.github:hover {
-	background-color: #4183C4;
-}
-.linkedin:hover {
-	background-color: #007BB6
-}
-.social button:hover {
-	color: white;
-	transform: scale(1.1);
-}
 .phone-icon {
 	background-image: url("../../assets/pics/phone.png");
 }
@@ -80,65 +24,45 @@
 footer {
 	background-color: #313332;
 	color: white;
-	padding: 40px 0;
 	text-align: center;
+	display: block;
 }
-.footer-container {
+.footer-icon {
+	font-size: 25px;
+	padding: 0 5px;
+}
+.info {
 	display: flex;
 	align-items: center;
-	align-content: center;
+	justify-content: center;
+	width: 100%;
+	padding: 30px 0
 }
-
-.info, .social {
-	width: 50%;
-	display: flex;
-	align-items: center;
-	align-content: center;;
-}
-footer h1 {
+h1 {
 	font-size: 18px;
 	font-weight: 400;
 }
-footer p {
-	font-size: 16px;
-	margin: 5px;
-}
-footer .copyright {
+.copyright {
 	text-align: center;
 	font-size: 12px;
 	background-color: #252726;
-	padding: 0;
+	padding: 10px 0;
 }
-footer .text-to-left {
+.text-to-left {
 	text-align: left;
 }
-footer .pclass {
+.pclass {
 	font-size: 16px;
 	font-weight: 400;
+	margin: 0;
+	color: darkgray;
 }
-footer a {
+a {
 	color: white;
 }
 
 
-@media (min-width: 768px) and (max-width: 1199px) {
-	footer p, footer .pclass {
-		font-size: 1.2em;
-	}
-	footer h1 {
-		font-size: 1.6em;
-	}
-	.icon-btn {
-		font-size: 35px;
-	}
-	.social button {
-		width: 60px;
-		height: 60px;
-		margin: 27px 7px;
-	}
-}
-
-@media (max-width: 767px) {
+@media (max-width: 1060px) {
 	footer p, footer .pclass {
 		font-size: 1.2em;
 	}

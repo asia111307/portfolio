@@ -1,20 +1,27 @@
-<div class="navigation" id="#nav">
-	<nav>
-	  <div>
-		<a routerLink="/" [ngx-scroll-to]="'#site-top'"><div class="home"></div></a>
-		<a class="lang-switch-to-eng" (click)="changeLangToENG()"><div class="lang-to-eng"></div></a>
-		<a class="lang-switch-to-pl" (click)="changeLangToPL()"><div class="lang-to-pl"></div></a>
-		<ul>
-			<a [ngx-scroll-to]="'#aboutme'" routerLink="/about"><li> {{ aboutme }} </li></a>
-				<li><a [ngx-scroll-to]="'#ux'" routerLink="/ux"> {{ projects }} </a>
-					<ul>
-						<a [ngx-scroll-to]="'#ux'" routerLink="/ux"><li> {{ ux }} </li></a>
-						<a [ngx-scroll-to]="'#dev'" routerLink="/dev"><li> {{ dev }} </li></a>
-						<a [ngx-scroll-to]="'#others'" routerLink="/others"><li> {{ others }} </li></a>
-					</ul>
-				</li>
-			<a [ngx-scroll-to]="'#footer'"><li> {{ contact }} </li></a>
-		</ul>
+<nav class="navigation" id="#nav">
+	<div class="hamburger-item">
+		<div id="nav-icon1" class="start">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+  <div class="nav-hidden">
+	  <div class="nav-meta">
+		  <a routerLink="/" [ngx-scroll-to]="'#site-top'"><div class="home"></div></a>
+		  <a class="lang-switch-to-eng" (click)="changeLangToENG()"><div class="lang-to-eng"></div></a>
+		  <a class="lang-switch-to-pl" (click)="changeLangToPL()"><div class="lang-to-pl"></div></a>
 	  </div>
-	</nav>
-</div>
+	<ul>
+		<a [ngx-scroll-to]="'#aboutme'" routerLink="/about"><li> {{ currentPack[30] }} </li></a>
+			<li><a [ngx-scroll-to]="'#ux'" routerLink="/ux"> {{ currentPack[31] }} </a>
+				<ul>
+					<a [ngx-scroll-to]="'#ux'" routerLink="/ux"><li> {{ currentPack[32] }} </li></a>
+					<a [ngx-scroll-to]="'#dev'" routerLink="/dev"><li> {{ currentPack[33] }} </li></a>
+					<a [ngx-scroll-to]="'#others'" routerLink="/others"><li> {{ currentPack[15] }} </li></a>
+				</ul>
+			</li>
+		<a [ngx-scroll-to]="'#footer'"><li> {{ currentPack[34] }} </li></a>
+	</ul>
+  </div>
+</nav>

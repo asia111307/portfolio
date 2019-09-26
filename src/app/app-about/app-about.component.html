@@ -1,16 +1,11 @@
 <section class="about section-style" id="aboutme">
   <div class="container">
-				<div class="row ">
-					<div class="col-8 col-m-12 col-s-12 ">
-						<h1 class="h-style"> {{ header }} </h1>
-						<p class="p-style"> {{ description }} </p>
-					</div>
-					<div class="col-4 col-m-12 col-s-12">
-						<div class="img"></div>
-					</div>
-				</div>
+	  <h1 class="h-style"> {{ currentPack[0] }} </h1>
+	  <div class="about-inner">
+		<p class="p-style about-text"> {{ currentPack[1] }} </p>
+		  <div class="about-img">
+			  <div class="img"></div>
+		  </div>
+	  </div>
   </div>
 </section>
-<app-school></app-school>
-<app-experience></app-experience>
-<app-skills></app-skills>

@@ -1,0 +1,133 @@
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project-item {
+    width: 45%;
+}
+.project-item-inner {
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: auto;
+    transition: 0.3s;
+    border: 1px solid lightgrey;
+}
+.project-item-layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.7);
+    justify-content: center;
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    position: relative;
+}
+.project-item-inner:hover .project-item-layer {
+    display: flex;
+    transition: 0.3s;
+}
+.project-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 75%;
+    margin-top: 20px;
+}
+.project-p {
+    color: white;
+    margin: 0;
+}
+.github:hover .project-p, .demo:hover .project-p {
+    display: none;
+}
+.github:hover .project-i, .demo:hover .project-i {
+    display: block;
+}
+.project-header {
+    color: white;
+    margin: 0;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+}
+.project-meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.project-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+}
+.project-icon {
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    margin: 5px;
+}
+.project-i {
+    color: white;
+    margin: 5px;
+    display: none;
+}
+.python {
+    background-image: url("../../assets/pics/python.png");
+}
+.angular {
+    background-image: url("../../assets/pics/angular.png");
+}
+.demo, .github {
+    width: 150px;
+    height: 50px;
+    background: none;
+    border: 1px solid lightgrey;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.demo:hover, .github:hover {
+    background-color: rgba(45, 134, 229, 0.6);
+    border: none;
+    cursor: pointer;
+}
+.millionaire {
+    background-image: url('../../assets/pics/millionaire.png') ;
+}
+.tiny-journeys {
+    background-image: url('../../assets/pics/tinyjourneys.png') ;
+}
+@media (max-width: 1060px) {
+    .projects-container {
+        flex-direction: column;
+    }
+    .project-item {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .project-item-layer {
+        display: flex;
+        height: 50%;
+    }
+    .project-item-inner {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .project-p, .project-icons {
+        display: none;
+    }
+    .project-i {
+        display: block;
+        font-size: 25px;
+    }
+}

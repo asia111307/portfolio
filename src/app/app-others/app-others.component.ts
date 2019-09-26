@@ -9,18 +9,10 @@ import {ChangeLangService} from '../change-lang.service';
 export class AppOthersComponent implements OnInit {
     currentLang: string;
     currentPack: any;
-    maintitle: string;
-    title1: string;
-    title2: string;
 
     constructor(private changeLangService: ChangeLangService) {
-        this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; this.setTexts(); } );
-        this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; this.setTexts(); } );
-    }
-    setTexts() {
-        this.maintitle = this.currentPack[15];
-        this.title1 = this.currentPack[12];
-        this.title2 = this.currentPack[16];
+        this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; } );
+        this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; } );
     }
     showProjectDetails = function() {
         const content = document.getElementsByClassName('example-others');

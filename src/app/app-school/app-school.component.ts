@@ -9,15 +9,9 @@ import {ChangeLangService} from '../change-lang.service';
 export class AppSchoolComponent {
     currentLang: string;
     currentPack: any;
-    maintitle: string;
-    description: string;
 
     constructor(private changeLangService: ChangeLangService) {
-        this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; this.setTexts(); } );
-        this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; this.setTexts(); } );
-    }
-    setTexts() {
-        this.maintitle = this.currentPack[26];
-        this.description = this.currentPack[27];
+        this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; } );
+        this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; } );
     }
 }

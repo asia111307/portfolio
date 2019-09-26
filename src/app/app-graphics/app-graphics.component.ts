@@ -9,15 +9,9 @@ import {ChangeLangService} from '../change-lang.service';
 export class AppGraphicsComponent {
     currentLang: string;
     currentPack: any;
-    title: string;
-    description: string;
 
     constructor(private changeLangService: ChangeLangService) {
-        this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; this.setTexts(); } );
-        this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; this.setTexts(); } );
-    }
-    setTexts() {
-        this.title = this.currentPack[12];
-        this.description = this.currentPack[13];
+        this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; } );
+        this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; } );
     }
 }

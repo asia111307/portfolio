@@ -9,17 +9,9 @@ import {ChangeLangService} from '../change-lang.service';
 export class AppExperienceComponent implements OnInit {
     currentLang: string;
     currentPack: any;
-    maintitle: string;
-    description: string;
-    button: string;
     constructor(private changeLangService: ChangeLangService) {
-        this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; this.setTexts(); } );
-        this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; this.setTexts(); } );
-    }
-    setTexts() {
-        this.maintitle = this.currentPack[9];
-        this.description = this.currentPack[10];
-        this.button = this.currentPack[11];
+        this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; } );
+        this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; } );
     }
   toggleOpen() {
       const elements = document.getElementsByClassName('view-cv');
@@ -44,5 +36,20 @@ export class AppExperienceComponent implements OnInit {
   }
   ngOnInit() {
       this.toggleOpen();
+      const tree_boxes = document.getElementsByClassName('tree-box-inner');
+      console.log(tree_boxes);
+      for (let i = 0; i < tree_boxes.length; i++) {
+          tree_boxes[i].addEventListener('scroll', function() {
+              const treeBoxTop = tree_boxes[i].getBoundingClientRect().top - document.body.getBoundingClientRect().top;
+              console.log(treeBoxTop);
+              if (treeBoxTop - document.documentElement.scrollTop <= 100 ) {
+                  tree_boxes[i].classList.add('show');
+                  console.log('class added');
+              } else {
+                  tree_boxes[i].classList.remove('show');
+                  console.log('class taken');
+              }
+          });
+      }
   }
 }
