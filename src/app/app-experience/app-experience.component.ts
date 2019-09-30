@@ -37,7 +37,6 @@ export class AppExperienceComponent implements OnInit {
   ngOnInit() {
       this.toggleOpen();
       const tree_boxes = document.getElementsByClassName('tree-box-inner');
-      console.log(tree_boxes);
       for (let i = 0; i < tree_boxes.length; i++) {
           tree_boxes[i].addEventListener('scroll', function() {
               const treeBoxTop = tree_boxes[i].getBoundingClientRect().top - document.body.getBoundingClientRect().top;

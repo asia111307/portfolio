@@ -10,10 +10,10 @@ export class AppComponent implements OnInit {
   currentLang: string;
   currentPack: any;
   title = 'mill';
-   constructor(private changeLangService: ChangeLangService) {
+  constructor(private changeLangService: ChangeLangService) {
        this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; });
        this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; });
-   }
+  }
   setDefaultLangEmitters() {
         const elementENG = document.getElementsByClassName('lang-switch-to-eng');
         const elementPL = document.getElementsByClassName('lang-switch-to-pl');

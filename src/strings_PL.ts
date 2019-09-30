@@ -1,12 +1,12 @@
 export const STRINGS_PL = {
-    0: 'Cześć! z tej strony Asia.',
-    1: 'Jestem obecnie studentką trzeciego roku kognitywistyki na Wydziale Nauk Społecznych Uniwersytetu im. Adama Mickiewicza w Poznaniu. Po ukończeniu studiów chciałabym podjąć pracę i rozwijać się w branży IT. Najbardziej interesuje mnie obszar User Experience, jednak nie chciałabym ograniczać swojej samorealizacji tylko do działań w&nbsp;UX. Swój czas poświęcam także na programowanie - uczę się zarówno technologii front-endowych (związanych z HTML, CSS, JavaScript), jak i&nbsp;rozwijam umiejętności back-endowe (póki co na razie tylko w Pythonie). Z racji tego, że dobrze czuję się także z matematyką i statystyką, planuję podjąć studia magisterskie na kierunku związanym z Data Science. Poza studiami pracuję w trybie weekendowym oraz nieregularnie w tygodniu. W&nbsp;ostatnim czasie w&nbsp;wolnych chwilach staram się jak najwięcej czasu poświęcić na zgłębianie wiedzy o User Experience i Usability, które są tematem mojej pracy licencjackiej (Percepcja w&nbsp;kontekście użytkownika). Zdobyte w&nbsp;ten sposób podstawy teoretyczne zamierzam wykorzystać w&nbsp;praktyce poprzez przykładne tworzenie projektów w&nbsp;ramach zajęć na uczelni, udział w&nbsp;grupowych kursach i&nbsp;projektach online, szukanie własnych pomysłów na badania i poprawę doświadczeń użytkowników oraz, mam nadzieję, poprzez odbycie zawodowych praktyk.',
+    0: 'Cześć!',
+    1: 'Jestem obecnie studentką drugiego roku analizy i przetwarzania danych na Wydziale Matematyki i Informatyki Uniwersytetu im. Adama Mickiewicza w Poznaniu. Wcześniej ukończyłam studia licencjackie z kognitywistyki, na której zainteresowałam się programowaniem i tematyką User Experience. Pierwsze linijki kodu pisałam w Pythonie i były to proste skrypty tworzone na zajęciach na uczelni. „Po godzinach” starałam się czytać i pisać więcej w tym języku i udało mi się stworzyć prostą wersję Milionerów. Zainteresowałam się także webdevelopmentem i później przeniosłam grę do aplikacji webowej napisanej w Angularze. Napisałam także miniblog, który wykorzystuje Pythona jako język backendowy. Na studiach magisterskich zaczęłam wykorzystywać Pythona do zastosowań z obszaru statystyki i uczenia maszynowego. Jednym z moich celów na najbliższy czas jest podniesienie poziomu swojej wiedzy właśnie z zakresu machine learningu i sztucznej inteligencji i stworzenie kilku niebanalnych projektów z tym związanych.',
     2: 'Projekty programistyczne',
     3: 'Milionerzy dla kognitywistów',
     4: 'Drobne programy',
-    5: 'Wersja popularnego teleturnieju "Milionerzy", w której pula pytań jest ściśle związana z obszarem nauk kognitywistyczych. Gracz otrzymuje zadanie losowo wybrane z zewnętrznej puli pytań, może skorzystać z trzech kół ratunkowych lub wycofać się w każdym momencie gry. Wynik gracza zostaje zapisany do zewnętrznego pliku. Pierwsza wersja gry została napisana w Pythonie. Nowsza wersja obejmuje przeniesienie tego kodu na poziom aplikacji webowej i jest ciągle w trakcie przygotowań.',
+    5: 'Prosta, ale funkcjonalna wersja gry w Milionerów z pytaniami z obszaru kognitywistyki. Gra dostępna w języku polskim.',
     6: 'Zagraj w nowych Milionerów',
-    7: 'Jest to zbiór drobnych programów napisanych w języku Python, na przykład: Gra w Wisielca Zgadywanie liczb Gra w Wojnę Gra w kółki i Krzyżyk',
+    7: 'Miniblog o tematyce podróżniczej, na którym użytkownik może m.in. założyć konto, dodawać, komentować i lajkować posty.',
     8: 'Zobacz programy',
     9: 'Wykształcenie i doświadczenie zawodowe',
     10: 'Experience opis',
@@ -41,7 +41,7 @@ export const STRINGS_PL = {
     39: 'Escape Room',
     40: '"Skrzappek" jest efektem pracy zespołowej w&nbsp;ramach przedmiotu Komunikacja człowiek-komputer. Począwszy od przeprowadzenia badań mających na celu zidentyfikowanie problemów i&nbsp;potrzeb ludzi w&nbsp;związku&nbsp;z&nbsp;tematem robienia prezentów, poprzez intensywne próby znalezienia sposobu na rozwiązanie tych problemów i&nbsp;zaprojektowanie najważniejszych funkcji tworzonego produktu, aż w&nbsp;końcu dzięki przeprowadzonym badaniom na użytkownikach przy pomocy papierowych prototypów - powstał "Skrzappek", czyli aplikacja mająca na celu dostarczanie pomysłów na prezenty dla konkretnych osób.',
     41: 'Zobacz Skrzappka',
-    42: 'Infokioski dla Turystów (polskich i&nbsp;zagranicznych) to projekt zrealizowany w&nbsp;ramach zajęć Usability na UAM. Interaktywna makieta ma w&nbsp;sprawny i&nbsp;intuicyjny sposób dostarczyć użytkownikom informacji, których najczęściej szukają, będąc w&nbsp;obcym mieście. Gdzie jest adres&nbsp;X? Jak tam dojechać? Czy w&nbsp;pobliżu znajdę jakiś bankomat? Gdzie mogę skorzystać z&nbsp;toalety? A&nbsp;czy jest tam dostępny Internet? Ten infokiosk udzieli odpowiedzi na te pytania, w&nbsp;dodatku jest w&nbsp;stanie zrobić to w&nbsp;kilku wariantach językowych.',
+    42: 'Interaktywny prototyp tablicy informacyjnej, która ma w sprawny i intuicyjny sposób dostarczać turystom informacji, których najczęściej szukają, będąc w obcym mieście.',
     43: 'Zobacz infokiosk',
     44: 'Opierając się na wynikach badań, które sugerują, że proces kupowania biletów kolejowych nie należy do najprzyjeniejszych i najłatwiejszych, przeprowadzone zostało badanie potrzeb podróżujących PKP oraz dokonano próby zaproponowania i&nbsp;zaprojektowania rozwiązania na zidentyfikowane problemy.\n',
     45: 'Zobacz projekt',
@@ -93,4 +93,7 @@ export const STRINGS_PL = {
     91: 'Napisane w Pythonie (Flasku)',
     92: 'Napisane w Angularze',
     93: 'Tiny Journeys',
+    94: 'Konteneryzaca przy użyciu Dockera',
+    95: 'Więcej',
+    96: 'Stworzone przy pomoce Axure RP'
 };

@@ -6,22 +6,28 @@
 			<span></span>
 		</div>
 	</div>
-  <div class="nav-hidden">
-	  <div class="nav-meta">
-		  <a routerLink="/" [ngx-scroll-to]="'#site-top'"><div class="home"></div></a>
-		  <a class="lang-switch-to-eng" (click)="changeLangToENG()"><div class="lang-to-eng"></div></a>
-		  <a class="lang-switch-to-pl" (click)="changeLangToPL()"><div class="lang-to-pl"></div></a>
-	  </div>
-	<ul>
-		<a [ngx-scroll-to]="'#aboutme'" routerLink="/about"><li> {{ currentPack[30] }} </li></a>
-			<li><a [ngx-scroll-to]="'#ux'" routerLink="/ux"> {{ currentPack[31] }} </a>
-				<ul>
-					<a [ngx-scroll-to]="'#ux'" routerLink="/ux"><li> {{ currentPack[32] }} </li></a>
-					<a [ngx-scroll-to]="'#dev'" routerLink="/dev"><li> {{ currentPack[33] }} </li></a>
-					<a [ngx-scroll-to]="'#others'" routerLink="/others"><li> {{ currentPack[15] }} </li></a>
-				</ul>
-			</li>
-		<a [ngx-scroll-to]="'#footer'"><li> {{ currentPack[34] }} </li></a>
-	</ul>
-  </div>
+    <div class="nav-hidden">
+	    <div class="nav-meta">
+		    <a routerLink="/" [ngx-scroll-to]="'#site-top'">
+				<div class="home"></div>
+			</a>
+		    <a class="lang-switch-to-eng" (click)="changeLangToENG()">
+				<div class="lang-to-eng"></div>
+			</a>
+		    <a class="lang-switch-to-pl" (click)="changeLangToPL()">
+				<div class="lang-to-pl"></div>
+			</a>
+	    </div>
+        <ul>
+            <a [ngx-scroll-to]="'#aboutme'">
+				<li> {{ currentPack[30] }} </li>
+			</a>
+            <a [ngx-scroll-to]="'#projects'">
+				<li> {{ currentPack[31] }} </li>
+			</a>
+            <a [ngx-scroll-to]="'#footer'">
+				<li> {{ currentPack[34] }} </li>
+			</a>
+        </ul>
+    </div>
 </nav>

@@ -2,17 +2,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .project-item {
     width: 45%;
+    margin-bottom: 50px;
+    background-color: rgb(0,0,0);
+}
+.project-item-ux {
+    width: 100%;
 }
 .project-item-inner {
     background-position: center;
     background-size: cover;
     height: 300px;
     width: auto;
-    transition: 0.3s;
     border: 1px solid lightgrey;
+    position: relative;
 }
 .project-item-layer {
     width: 100%;
@@ -20,13 +26,14 @@
     background-color: rgba(0,0,0, 0.7);
     justify-content: center;
     align-items: center;
-    display: none;
+    opacity: 0;
     flex-direction: column;
     position: relative;
+    transition: 0.3s;
+    display: flex;
 }
 .project-item-inner:hover .project-item-layer {
-    display: flex;
-    transition: 0.3s;
+    opacity: 1;
 }
 .project-buttons {
     display: flex;
@@ -39,10 +46,10 @@
     color: white;
     margin: 0;
 }
-.github:hover .project-p, .demo:hover .project-p {
+.project-button-item:hover .project-p {
     display: none;
 }
-.github:hover .project-i, .demo:hover .project-i {
+.project-button-item:hover .project-i {
     display: block;
 }
 .project-header {
@@ -74,6 +81,22 @@
     background-size: cover;
     margin: 5px;
 }
+.meta-label {
+    top: 0;
+    left: 0;
+    color: white;
+    height: 30px;
+    width: 100px;
+    font-weight: bold;
+    padding: 5px 0;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -10px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .project-i {
     color: white;
     margin: 5px;
@@ -85,7 +108,20 @@
 .angular {
     background-image: url("../../assets/pics/angular.png");
 }
-.demo, .github {
+.docker {
+    background-image: url("../../assets/pics/docker.png");
+}
+.axure {
+    background-image: url("../../assets/pics/axure.jpg");
+}
+.fa-more {
+    background-image: url("../../assets/pics/more.png");
+    background-size: cover;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+}
+.project-button-item {
     width: 150px;
     height: 50px;
     background: none;
@@ -95,16 +131,28 @@
     align-items: center;
     justify-content: center;
 }
-.demo:hover, .github:hover {
-    background-color: rgba(45, 134, 229, 0.6);
+.project-button-item:hover {
     border: none;
     cursor: pointer;
 }
+.meta-label-dev, .project-button-item-dev:hover {
+    background-color: #3B5998;
+}
+.meta-label-ux, .project-button-item-ux:hover {
+    background-color: darkmagenta;
+}
 .millionaire {
-    background-image: url('../../assets/pics/millionaire.png') ;
+    background-image: url('../../assets/pics/millionaire.png');
 }
 .tiny-journeys {
-    background-image: url('../../assets/pics/tinyjourneys.png') ;
+    background-image: url('../../assets/pics/tinyjourneys.png');
+}
+.infokiosks {
+    background-image: url('../../assets/pics/infokioski.png');
+}
+.project-description {
+    padding: 10px 20px;
+    text-align: center;
 }
 @media (max-width: 1060px) {
     .projects-container {
@@ -130,7 +178,14 @@
         display: block;
         font-size: 25px;
     }
-    .demo, .github {
-        width: 100px;
+    .fa-more {
+        width: 25px;
+        height: 25px;
+    }
+    .project-button-item {
+        width: 120px;
+    }
+    .meta-p {
+        display: block;
     }
 }

@@ -1,12 +1,12 @@
 export const STRINGS_ENG = {
-    0: 'ENG Cześć! z tej strony Asia.',
-    1: 'ENG Jestem obecnie studentką trzeciego roku kognitywistyki na Wydziale Nauk Społecznych Uniwersytetu im. Adama Mickiewicza w Poznaniu. Po ukończeniu studiów chciałabym podjąć pracę i rozwijać się w branży IT. Najbardziej interesuje mnie obszar User Experience, jednak nie chciałabym ograniczać swojej samorealizacji tylko do działań w&nbsp;UX. Swój czas poświęcam także na programowanie - uczę się zarówno technologii front-endowych (związanych z HTML, CSS, JavaScript), jak i&nbsp;rozwijam umiejętności back-endowe (póki co na razie tylko w Pythonie). Z racji tego, że dobrze czuję się także z matematyką i statystyką, planuję podjąć studia magisterskie na kierunku związanym z Data Science. Poza studiami pracuję w trybie weekendowym oraz nieregularnie w tygodniu. W&nbsp;ostatnim czasie w&nbsp;wolnych chwilach staram się jak najwięcej czasu poświęcić na zgłębianie wiedzy o User Experience i Usability, które są tematem mojej pracy licencjackiej (Percepcja w&nbsp;kontekście użytkownika). Zdobyte w&nbsp;ten sposób podstawy teoretyczne zamierzam wykorzystać w&nbsp;praktyce poprzez przykładne tworzenie projektów w&nbsp;ramach zajęć na uczelni, udział w&nbsp;grupowych kursach i&nbsp;projektach online, szukanie własnych pomysłów na badania i poprawę doświadczeń użytkowników oraz, mam nadzieję, poprzez odbycie zawodowych praktyk.',
-    2: 'ENG Projekty programistyczne',
-    3: 'ENG Milionerzy dla kognitywistów',
-    4: 'ENG Drobne programy',
-    5: 'ENG Wersja popularnego teleturnieju "Milionerzy", w&nbsp;której pula pytań jest ściśle związana z&nbsp;obszarem studiów kognitywistyczych. Gracz otrzymuje zadanie losowo wybrane z&nbsp;zewnętrznej puli pytań, może skorzystać z&nbsp;trzech kół ratunkowych lub wycofać się w&nbsp;każdym momencie gry. Wynik gracza zostaje zapisywany do zewnętrznego pliku.\n',
+    0: 'About',
+    1: 'I am currently a second year student of data analysis and processing at the Faculty of Mathematics and Computer Science of the Adam Mickiewicz University in Poznań. I have completed a bachelor\'s degree in cognitive science, where I became interested in programming and User Experience. I wrote the first lines of simple scripts in Python during classes at the university. In my free time I tried to read and write more in this language and I finally I created a simple version of Millionaire game. I also became interested in webdevelopment and then I moved the game to a web application written in Angular. I also wrote a miniblog that uses Python as a backend language. During my master\'s degree I started using Python in the field of statistics and machine learning. One of my goals for the near future is to raise the level of my knowledge in the field of machine learning and artificial intelligence and to create several original projects related to it.',
+    2: 'Programming projects',
+    3: 'Millionaire - Cognitive Science Edition',
+    4: 'Simple programs',
+    5: 'A simple but functional version of the Millionaire game with cognitive science questions. Only available in Polish language.',
     6: 'ENG Zobacz Milionerów',
-    7: 'ENG Jest to zbiór drobnych programów napisanych w języku Python, na przykład: Gra w Wisielca Zgadywanie liczb Gra w Wojnę Gra w kółki i Krzyżyk',
+    7: 'A travel-themed mini-blog where user can i.a. sign up, add, comment and like posts.',
     8: 'ENG Zobacz programy',
     9: 'Education and work experience',
     10: 'Experience description',
@@ -41,7 +41,7 @@ export const STRINGS_ENG = {
     39: 'Escape Room',
     40: 'ENG "Skrzappek" jest efektem pracy zespołowej w&nbsp;ramach przedmiotu Komunikacja człowiek-komputer. Począwszy od przeprowadzenia badań mających na celu zidentyfikowanie problemów i&nbsp;potrzeb ludzi w&nbsp;związku&nbsp;z&nbsp;tematem robienia prezentów, poprzez intensywne próby znalezienia sposobu na rozwiązanie tych problemów i&nbsp;zaprojektowanie najważniejszych funkcji tworzonego produktu, aż w&nbsp;końcu dzięki przeprowadzonym badaniom na użytkownikach przy pomocy papierowych prototypów - powstał "Skrzappek", czyli aplikacja mająca na celu dostarczanie pomysłów na prezenty dla konkretnych osób.',
     41: 'See Skrzappek',
-    42: 'ENG Infokioski dla Turystów (polskich i&nbsp;zagranicznych) to projekt zrealizowany w&nbsp;ramach zajęć Usability na UAM. Interaktywna makieta ma w&nbsp;sprawny i&nbsp;intuicyjny sposób dostarczyć użytkownikom informacji, których najczęściej szukają, będąc w&nbsp;obcym mieście. Gdzie jest adres&nbsp;X? Jak tam dojechać? Czy w&nbsp;pobliżu znajdę jakiś bankomat? Gdzie mogę skorzystać z&nbsp;toalety? A&nbsp;czy jest tam dostępny Internet? Ten infokiosk udzieli odpowiedzi na te pytania, w&nbsp;dodatku jest w&nbsp;stanie zrobić to w&nbsp;kilku wariantach językowych.',
+    42: 'An interactive prototype of an information board that provides tourists with the information they are mostly looking for while visiting a foreign city.',
     43: 'See interactive information board',
     44: 'ENG Opierając się na wynikach badań, które sugerują, że proces kupowania biletów kolejowych nie należy do najprzyjeniejszych i najłatwiejszych, przeprowadzone zostało badanie potrzeb podróżujących PKP oraz dokonano próby zaproponowania i&nbsp;zaprojektowania rozwiązania na zidentyfikowane problemy.\n',
     45: 'See project',
@@ -92,5 +92,8 @@ export const STRINGS_ENG = {
     90: 'New version made with Angular',
     91: 'Made with Python (Flask)',
     92: 'Made with Angular',
-    93: 'Tiny Journeys'
+    93: 'Tiny Journeys',
+    94: 'Containerization with Docker',
+    95: 'More',
+    96: 'Made with Axure RP'
 };

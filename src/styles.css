@@ -24,12 +24,15 @@ a:link, a:visited, a:active, a:hover {
   	font-weight: 300;
 	color: grey;
 	text-align: justify;
+	margin: 0;
+	line-height: 30px;
 }
 .h-style {
 	text-align: center;
-	font-size: 40px;
+	font-size: 35px;
 	font-weight: 400;
-	margin: 5% 0;
+	margin: 40px 0;
+	padding: 20px 0;
 	color: grey;
 }
 .h2-style {
@@ -39,7 +42,7 @@ a:link, a:visited, a:active, a:hover {
 	color: grey;
 }
 .section-style {
-	margin: 100px 0;
+	padding: 40px 0;
 }
 .p-small {
 	font-size: 14px;

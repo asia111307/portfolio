@@ -6,7 +6,7 @@ import {ChangeLangService} from '../change-lang.service';
   templateUrl: './app-projects.component.html',
   styleUrls: ['./app-projects.component.css']
 })
-export class AppProjectsComponent implements OnInit {
+export class AppProjectsComponent {
 
   currentLang: string;
   currentPack: any;
@@ -15,8 +15,4 @@ export class AppProjectsComponent implements OnInit {
     this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; } );
     this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; } );
   }
-
-  ngOnInit() {
-  }
-
 }

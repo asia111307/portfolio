@@ -1,11 +1,3 @@
-
-.phone-icon {
-	background-image: url("../../assets/pics/phone.png");
-}
-.email-icon {
-	background-image: url("../../assets/pics/email.png");
-
-}
 .email-icon, .phone-icon {
 	height: 40px;
 	width: 40px;
@@ -16,7 +8,28 @@
 	display: flex;
 	align-content: center;
 	align-items: center;
-	padding: 0 25px;
+	padding: 0 30px;
+}
+.github-button {
+	margin-left: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.github-span {
+	display: inline-block;
+}
+.github-btn {
+	color: white;
+	background-color: inherit;
+	transition: 0.3s;
+	border-radius: 50%;
+	border: none;
+}
+.github-btn:hover {
+	color: #252726;
+	background-color: white;
+	cursor: pointer;
 }
 
 
@@ -38,10 +51,6 @@ footer {
 	width: 100%;
 	padding: 30px 0
 }
-h1 {
-	font-size: 18px;
-	font-weight: 400;
-}
 .copyright {
 	text-align: center;
 	font-size: 12px;
@@ -60,15 +69,15 @@ h1 {
 a {
 	color: white;
 }
+.email i, .phone i {
+	margin-right: 5px;
+}
 
 
 @media (max-width: 1060px) {
-	footer p, footer .pclass {
-		font-size: 1.2em;
-	}
-	footer h1 {
-		font-size: 1.6em;
-	}
+	/*footer p, footer .pclass {*/
+		/*font-size: 1.2em;*/
+	/*}*/
 	.social button {
 		width: 55px;
 		height: 55px;
@@ -77,4 +86,11 @@ a {
 	.icon-btn {
 		font-size: 33px;
 	}
+	.info {
+		flex-direction: column;
+	}
+	.fa-github {
+		font-size: 16px;
+	}
+
 }

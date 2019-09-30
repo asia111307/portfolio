@@ -7,13 +7,13 @@ import {ChangeLangService} from '../change-lang.service';
   styleUrls: ['./app-top-nav.component.css']
 })
 export class AppTopNavComponent implements OnInit {
-    currentLang: string;
-    currentPack: any;
+  currentLang: string;
+  currentPack: any;
 
-    constructor(private changeLangService: ChangeLangService) {
+  constructor(private changeLangService: ChangeLangService) {
         this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; } );
         this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; } );
-    }
+  }
   changeLangToENG() {
       this.changeLangService.changeLangToENG();
   }
@@ -34,5 +34,5 @@ export class AppTopNavComponent implements OnInit {
             }
         });
         document.getElementById('nav-icon1').click()
-    }
+   }
 }

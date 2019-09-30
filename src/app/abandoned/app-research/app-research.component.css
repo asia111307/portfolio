@@ -1,0 +1,12 @@
+.project-desc {
+    padding: 0 5% 0 10%;
+}
+.project-car {
+    padding: 0 10% 0 5%;
+}
+.photo-1, .photo-2, .photo-3, .photo-4 {
+    background-image: url("../../../assets/pics/skrz.jpg");
+}
+.project-car-inner {
+    width: 80%;
+}

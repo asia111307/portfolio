@@ -20,6 +20,7 @@
 .experience-tree {
     position: relative;
 }
+
 .experience-line-div {
     position: absolute;
     height: 100%;
@@ -59,7 +60,7 @@
 }
 .tree-box-inner:hover {
     background-color: rgba(45, 134, 229, 0.6);
-    border: none;
+    border-color: transparent;
 }
 .tree-box-inner:hover + .experience-line-div .experience-line {
     background-color: rgba(45, 134, 229, 0.6);
@@ -178,11 +179,30 @@
     }
     .tree-box-inner {
         width: 100%;
+        position: initial;
     }
     .year-label {
         position: unset;
+        margin-bottom: 0;
+        text-align: left;
+        margin-left: 30px;
     }
     .tree-box {
         display: block;
+        position: relative;
+    }
+    /*.tree-box-fa {*/
+        /*display: none;*/
+    /*}*/
+    .tree-box-inner-p {
+        text-align: left;
+    }
+    .tree-box-fa {
+        padding: 5px;
+    }
+    .tree-box-fa-right {
+        right: initial;
+        left: 0;
     }
 }
+
