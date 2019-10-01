@@ -152,8 +152,6 @@ a:link, a:visited, a:active, a:hover {
 	color: rgb(76, 76, 75);
 	background-position: 0 100%;
 }
-
-
 @media (max-width: 1060px) {
 	.h-style {
 		font-size: 35px;

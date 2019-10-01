@@ -132,7 +132,7 @@
     justify-content: center;
 }
 .project-button-item:hover {
-    border: none;
+    border: transparent;
     cursor: pointer;
 }
 .meta-label-dev, .project-button-item-dev:hover {

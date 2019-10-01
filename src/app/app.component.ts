@@ -9,7 +9,6 @@ import {ChangeLangService} from './change-lang.service';
 export class AppComponent implements OnInit {
   currentLang: string;
   currentPack: any;
-  title = 'mill';
   constructor(private changeLangService: ChangeLangService) {
        this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; });
        this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; });

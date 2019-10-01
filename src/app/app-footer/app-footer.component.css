@@ -1,14 +1,46 @@
-.email-icon, .phone-icon {
-	height: 40px;
-	width: 40px;
-	background-size: contain;
-	margin-right: 10px;
+footer {
+	background-color: #313332;
+	color: white;
+	text-align: center;
+	display: block;
 }
-.phone, .email {
+.footer-icon {
+	font-size: 25px;
+	padding: 0 5px;
+}
+.info {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	padding: 30px 50px;
+}
+.copyright {
+	text-align: center;
+	font-size: 12px;
+	background-color: #252726;
+	padding: 10px 0;
+}
+.text-to-left {
+	text-align: left;
+}
+.pclass {
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0;
+	color: darkgray;
+}
+a {
+	color: white;
+}
+.footer-info-item i {
+	margin-right: 5px;
+}
+.footer-info-item {
 	display: flex;
 	align-content: center;
 	align-items: center;
-	padding: 0 30px;
+	padding: 10px 30px;
 }
 .github-button {
 	margin-left: 10px;
@@ -30,47 +62,6 @@
 	color: #252726;
 	background-color: white;
 	cursor: pointer;
-}
-
-
-/* FOOTER */
-footer {
-	background-color: #313332;
-	color: white;
-	text-align: center;
-	display: block;
-}
-.footer-icon {
-	font-size: 25px;
-	padding: 0 5px;
-}
-.info {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	padding: 30px 0
-}
-.copyright {
-	text-align: center;
-	font-size: 12px;
-	background-color: #252726;
-	padding: 10px 0;
-}
-.text-to-left {
-	text-align: left;
-}
-.pclass {
-	font-size: 16px;
-	font-weight: 400;
-	margin: 0;
-	color: darkgray;
-}
-a {
-	color: white;
-}
-.email i, .phone i {
-	margin-right: 5px;
 }
 
 
