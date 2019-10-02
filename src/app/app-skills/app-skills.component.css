@@ -1,10 +1,11 @@
 .skill-box {
-    width: 45%;
+    width: 100%;
     /*border: 1px solid lightgrey;*/
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    margin: 40px 0;
 }
 .skills-container, .skill-box-items, .skill-box-item-span, .skill-box-item-meta {
     display: flex;
@@ -12,21 +13,33 @@
     align-items: center;
     flex-wrap: wrap;
 }
+.skill-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.skill-box-items {
+    width: 65%;
+}
+.skill-box-description {
+    width: 35%;
+}
 .skill-box-item-meta {
     flex-direction: column;
     width: 100%;
     height: 100%;
     opacity: 0;
     transition: 0.3s;
-    position: absolute;
-    top: 0;
+    text-align: center;
+    margin-top: 10px;
 }
 .skill-box-item:hover .skill-box-item-meta {
     opacity: 1;
 }
-.skill-box-item:hover {
-    border: 2px solid rgba(45, 134, 229, 0.6);
-}
+/*.skill-box-item:hover {*/
+    /*border: 2px solid rgba(45, 134, 229, 0.6);*/
+/*}*/
 .skill-box-item-photo {
     width: 100%;
     height: 100%;
@@ -38,10 +51,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     flex-direction: column;
-    width: 150px;
-    height: 150px;
+    width: 20%;
+    height: auto;
     position: relative;
 }
 .star {
@@ -106,6 +119,42 @@
 .indesign {
     background-image: url("../../assets/pics/indesign.png");
 }
+.docker {
+    background-image: url("../../assets/pics/docker-c.png");
+}
+.r-lang {
+    background-image: url("../../assets/pics/r.jpg");
+}
+.php {
+    background-image: url("../../assets/pics/php.png");
+}
+.excel {
+    background-image: url("../../assets/pics/excel.png");
+}
+.wordpress {
+    background-image: url("../../assets/pics/wordpress.png");
+}
+.latex {
+     background-image: url("../../assets/pics/latex.png");
+}
+.sass {
+    background-image: url("../../assets/pics/sass.png");
+}
+.numpy {
+    background-image: url("../../assets/pics/numpy.png");
+}
+.scipy {
+    background-image: url("../../assets/pics/scipy.png");
+}
+.matplotlib {
+    background-image: url("../../assets/pics/matplotlib.png");
+}
+.pandas {
+    background-image: url("../../assets/pics/pandas.jpeg");
+}
+.django {
+    background-image: url("../../assets/pics/django.jpg");
+}
 .skill-box-item-image {
     width: 40px;
     height: 40px;
@@ -119,6 +168,7 @@
 }
 .skill-meta {
     font-weight: bold;
+    font-size: 14px;
 }
 .skill-box-p {
     margin-left: 5px;
@@ -126,11 +176,23 @@
 }
 
 @media (max-width: 1060px) {
-    .skill-box {
+    .skill-box, .skill-box-items, .skill-box-description {
         width: 100%;
     }
     .skill-box-item-meta {
         opacity: 1
+    }
+    .skill-box-container {
+        flex-direction: column;
+    }
+    .skill-box-item {
+        width: 50%;
+    }
+    .skill-box {
+        margin: 40px 0;
+    }
+    .skill-box-container-reverse {
+        flex-direction: column-reverse;
     }
 
 }

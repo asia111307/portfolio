@@ -67,13 +67,12 @@
 
 @media (max-width: 1060px) {
   .jumbotron {
-	  margin-top: 70px;
 	  height: 60vh;
 	  background-attachment: initial;
-	  /*position: initial;*/
   }
   .slogan {
 	  margin-left: 0;
+	  width: 100%;
   }
   .slogan h1 {
 	  font-size: 25px;
