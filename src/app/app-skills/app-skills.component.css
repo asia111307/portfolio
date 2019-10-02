@@ -57,11 +57,6 @@
     height: auto;
     position: relative;
 }
-.star {
-    width: 15px;
-    height: 15px;
-    background-image: url("../../assets/pics/star.png");
-}
 .python {
     background-image: url("../../assets/pics/pyrhon-c.png");
 }

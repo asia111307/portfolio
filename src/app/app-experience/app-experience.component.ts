@@ -34,21 +34,42 @@ export class AppExperienceComponent implements OnInit {
           });
       }
   }
+
   ngOnInit() {
       this.toggleOpen();
-      const tree_boxes = document.getElementsByClassName('tree-box-inner');
-      for (let i = 0; i < tree_boxes.length; i++) {
-          tree_boxes[i].addEventListener('scroll', function() {
-              const treeBoxTop = tree_boxes[i].getBoundingClientRect().top - document.body.getBoundingClientRect().top;
-              console.log(treeBoxTop);
-              if (treeBoxTop - document.documentElement.scrollTop <= 100 ) {
-                  tree_boxes[i].classList.add('show');
-                  console.log('class added');
-              } else {
-                  tree_boxes[i].classList.remove('show');
-                  console.log('class taken');
+      window.addEventListener('scroll', function() {
+          const tree_boxes_left = document.getElementsByClassName('tree-box-inner-left');
+          const tree_boxes_left_triangles = document.getElementsByClassName('triangle-left');
+          const tree_boxes_right = document.getElementsByClassName('tree-box-inner-right');
+          const tree_boxes_right_triangles = document.getElementsByClassName('triangle-right');
+          const current_window_width = window.innerWidth;
+          if (current_window_width >= 1060) {
+              for (let i = 0; i < (tree_boxes_left.length); i++) {
+                  if (tree_boxes_left[i].getBoundingClientRect().top < (window.innerHeight * 0.8)) {
+                      (<HTMLElement> tree_boxes_left[i]).style.opacity = '1';
+                      (<HTMLElement> tree_boxes_left[i]).style.left = '0';
+                      (<HTMLElement> tree_boxes_left_triangles[i]).style.opacity = '1';
+                  } else {
+                      (<HTMLElement> tree_boxes_left[i]).style.opacity = '0';
+                      (<HTMLElement> tree_boxes_left[i]).style.left = '-500px';
+                      (<HTMLElement> tree_boxes_left_triangles[i]).style.opacity = '0';
+                      (<HTMLElement> tree_boxes_left_triangles[i]).style.transitionDelay = 'none';
+                  }
               }
-          });
-      }
+              for (let i = 0; i < (tree_boxes_right.length); i++) {
+                  if (tree_boxes_right[i].getBoundingClientRect().top < (window.innerHeight * 0.8)) {
+                      (<HTMLElement>tree_boxes_right[i]).style.opacity = '1';
+                      (<HTMLElement>tree_boxes_right[i]).style.right = '0';
+                      (<HTMLElement> tree_boxes_right_triangles[i]).style.opacity = '1';
+                  } else {
+                      (<HTMLElement>tree_boxes_right[i]).style.opacity = '0';
+                      (<HTMLElement>tree_boxes_right[i]).style.right = '-500px';
+                      (<HTMLElement> tree_boxes_right_triangles[i]).style.opacity = '0';
+                      (<HTMLElement> tree_boxes_right_triangles[i]).style.transitionDelay = 'none';
+                  }
+              }
+          }
+      });
+
   }
 }
