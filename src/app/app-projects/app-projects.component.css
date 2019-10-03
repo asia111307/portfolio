@@ -44,7 +44,9 @@
 }
 .project-p {
     color: white;
-    margin: 0;
+}
+.meta-p {
+    font-weight: bold;
 }
 .project-button-item:hover .project-p {
     display: none;
@@ -55,7 +57,6 @@
 .project-header {
     color: white;
     margin: 0;
-    font-size: 24px;
     width: 100%;
     text-align: center;
 }
@@ -64,6 +65,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 5px;
 }
 .project-icons {
     display: flex;
@@ -174,6 +176,18 @@
     }
     .project-p, .project-icons {
         display: none;
+    }
+    .project-item:hover .project-description {
+        display: flex;
+    }
+    .project-item:hover .meta-label {
+        display: none;
+    }
+    .project-item:hover .project-buttons {
+        margin-top: 0;
+    }
+    .project-item:hover .project-item-layer {
+        height: 100%;
     }
     .project-i {
         display: block;

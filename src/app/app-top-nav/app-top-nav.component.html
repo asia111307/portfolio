@@ -8,32 +8,32 @@
 	</div>
     <div class="nav-hidden">
 	    <div class="nav-meta">
-		    <a routerLink="/" [ngx-scroll-to]="'#site-top'">
+		    <a class="nav-element-a" routerLink="/" [ngx-scroll-to]="'#site-top'">
 				<div class="home"></div>
 			</a>
-		    <a class="lang-switch-to-eng" (click)="changeLangToENG()">
+		    <a class="nav-element-a lang-switch-to-eng" (click)="changeLangToENG()">
 				<div class="lang-to-eng"></div>
 			</a>
-		    <a class="lang-switch-to-pl" (click)="changeLangToPL()">
+		    <a  class="nav-element-a lang-switch-to-pl" (click)="changeLangToPL()">
 				<div class="lang-to-pl"></div>
 			</a>
 	    </div>
-        <ul>
-            <a [ngx-scroll-to]="'#aboutme'">
-				<li> {{ currentPack[30] }} </li>
+        <div class="nav-inner">
+            <a class="nav-element-a" [ngx-scroll-to]="'#aboutme'">
+				<p class="nav-element p-style p-small"> {{ currentPack[30] }} </p>
 			</a>
-			<a [ngx-scroll-to]="'#skills'">
-				<li> {{ currentPack[28] }} </li>
+			<a class="nav-element-a" [ngx-scroll-to]="'#skills'">
+				<p class="nav-element p-style p-small"> {{ currentPack[28] }} </p>
 			</a>
-			<a [ngx-scroll-to]="'#xp'">
-				<li> {{ currentPack[9] }} </li>
+			<a class="nav-element-a" [ngx-scroll-to]="'#xp'">
+				<p class="nav-element p-style p-small"> {{ currentPack[9] }} </p>
 			</a>
-            <a [ngx-scroll-to]="'#projects'">
-				<li> {{ currentPack[31] }} </li>
+            <a class="nav-element-a" [ngx-scroll-to]="'#projects'">
+				<p class="nav-element p-style p-small"> {{ currentPack[31] }} </p>
 			</a>
-            <a [ngx-scroll-to]="'#footer'">
-				<li> {{ currentPack[34] }} </li>
+            <a class="nav-element-a" [ngx-scroll-to]="'#footer'">
+				<p class="nav-element p-style p-small"> {{ currentPack[34] }} </p>
 			</a>
-        </ul>
+        </div>
     </div>
 </nav>

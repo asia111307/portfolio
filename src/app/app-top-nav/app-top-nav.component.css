@@ -9,12 +9,11 @@
 	justify-content: center;
 	align-items: center;
 }
-nav a:link, nav a:visited, nav a:active {
+.nav-element-a:link, .nav-element-a:visited, .nav-element-a:active {
 	text-decoration: none;
 	color: grey;
 }
-nav ul {
-	list-style-type: none;
+.nav-inner {
 	padding: 0;
 	margin: 0;
 	display: flex;
@@ -22,17 +21,17 @@ nav ul {
 	align-items: center;
 	height: 100%;
 }
-nav li {
+.nav-element {
 	line-height: 50px;
 	height: 50px;
 	width: auto;
 	min-width: 200px;
 	transition: 0.3s;
 	font-weight: 400;
-	font-size: 18px;
 	text-align: center;
+	font-size: 18px;
 }
-nav a {
+.nav-element-a {
 	color: grey;
 	text-decoration: none;
 	padding: 0;
@@ -40,7 +39,7 @@ nav a {
 	align-items: center;
 	justify-content: center;
 }
-nav li:hover, nav li:hover a  {
+.nav-element:hover, .nav-element:hover a  {
 	cursor: pointer;
 	color: rgb(45, 134, 229);
 	border-bottom: 1px solid rgb(45, 134, 229);
@@ -159,18 +158,15 @@ nav li:hover, nav li:hover a  {
 		display: block;
 		background-color: rgba(255, 255, 255, 1);
 	}
-	nav {
-		font-size: 17px;
-	}
-	nav ul {
+	.nav-inner {
 		flex-direction: column;
 		width: 100%;
 		justify-content: flex-start;
 	}
-	nav a {
+	.nav-element-a {
 		width: 100%;
 	}
-	nav li {
+	.nav-element {
 		display: block;
 		width: 100%;
 		height: auto;
@@ -179,7 +175,7 @@ nav li:hover, nav li:hover a  {
 		line-height: 25px;
 		margin: 20px 0;
 	}
-	nav li:hover, nav li:hover a  {
+	.nav-element:hover, .nav-element:hover .nav-element-a {
 		border-bottom: none;
 	}
 	.hamburger-item {
