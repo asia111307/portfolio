@@ -173,7 +173,7 @@
     .skill-box, .skill-box-items, .skill-box-description {
         width: 100%;
     }
-    .skill-box-item-meta {
+    .skill-box-item-meta, .skill-box-description {
         opacity: 1
     }
     .skill-box-container {
