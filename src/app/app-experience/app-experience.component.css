@@ -50,7 +50,6 @@
     width: 40%;
     min-height: 170px;
     border: 2px solid rgba(45, 134, 229, 0.6);
-    transition: 0.3s;
     padding: 20px 30px;
     justify-content: flex-start;
     align-items: center;
@@ -62,12 +61,12 @@
 }
 .tree-box-inner-left {
     left: -500px;
-    transition: all 1s;
+    transition: left 1s, background-color 0.3s;
     text-align: right;
 }
 .tree-box-inner-right {
     right: -500px;
-    transition: all 1s;
+    transition: right 1s, background-color 0.3s;
 }
 .tree-box-inner:hover {
     background-color: rgba(45, 134, 229, 0.6);
