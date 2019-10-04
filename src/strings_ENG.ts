@@ -41,7 +41,7 @@ export const STRINGS_ENG = {
     39: 'Escape Room',
     40: 'ENG "Skrzappek" jest efektem pracy zespołowej w&nbsp;ramach przedmiotu Komunikacja człowiek-komputer. Począwszy od przeprowadzenia badań mających na celu zidentyfikowanie problemów i&nbsp;potrzeb ludzi w&nbsp;związku&nbsp;z&nbsp;tematem robienia prezentów, poprzez intensywne próby znalezienia sposobu na rozwiązanie tych problemów i&nbsp;zaprojektowanie najważniejszych funkcji tworzonego produktu, aż w&nbsp;końcu dzięki przeprowadzonym badaniom na użytkownikach przy pomocy papierowych prototypów - powstał "Skrzappek", czyli aplikacja mająca na celu dostarczanie pomysłów na prezenty dla konkretnych osób.',
     41: 'See Skrzappek',
-    42: 'An\xA0interactive prototype of an\xA0information board that provides tourists with the information they are mostly looking for while visiting a\xA0foreign city.',
+    42: 'An\xA0interactive prototype of an information board that provides tourists with the places they are mostly looking for while visiting a\xA0foreign city.',
     43: 'See interactive information board',
     44: 'ENG Opierając się na wynikach badań, które sugerują, że proces kupowania biletów kolejowych nie należy do najprzyjeniejszych i najłatwiejszych, przeprowadzone zostało badanie potrzeb podróżujących PKP oraz dokonano próby zaproponowania i&nbsp;zaprojektowania rozwiązania na zidentyfikowane problemy.\n',
     45: 'See project',
