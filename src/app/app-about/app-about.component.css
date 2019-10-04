@@ -21,7 +21,7 @@
 	.about-inner {
 		flex-direction: column;
 	}
-	.about-text, .about-img, {
+	.about-text, .about-img {
 		width: 100%;
 	}
 }

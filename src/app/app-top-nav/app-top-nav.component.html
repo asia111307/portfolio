@@ -8,30 +8,30 @@
 	</div>
     <div class="nav-hidden">
 	    <div class="nav-meta">
-		    <a class="nav-element-a" routerLink="/" [ngx-scroll-to]="'#site-top'">
+		    <a routerLink="/" [ngx-scroll-to]="'#site-top'">
 				<div class="nav-meta-item home"></div>
 			</a>
-		    <a class="nav-element-a lang-switch-to-eng" (click)="changeLangToENG()">
+		    <a class="lang-switch-to-eng" (click)="changeLangToENG()">
 				<div class="nav-meta-item lang-to-eng"></div>
 			</a>
-		    <a  class="nav-element-a lang-switch-to-pl" (click)="changeLangToPL()">
+		    <a  class="lang-switch-to-pl" (click)="changeLangToPL()">
 				<div class="nav-meta-item lang-to-pl"></div>
 			</a>
 	    </div>
         <div class="nav-inner">
-            <a class="nav-element-a" [ngx-scroll-to]="'#aboutme'">
+            <a class="nav-element-a" [ngx-scroll-to]="'#aboutme'" id="aboutme-a">
 				<p class="nav-element p-style p-small"> {{ currentPack[30] }} </p>
 			</a>
-			<a class="nav-element-a" [ngx-scroll-to]="'#skills'">
+			<a class="nav-element-a" [ngx-scroll-to]="'#skills'" id="skills-a">
 				<p class="nav-element p-style p-small"> {{ currentPack[28] }} </p>
 			</a>
-			<a class="nav-element-a" [ngx-scroll-to]="'#xp'">
+			<a class="nav-element-a" [ngx-scroll-to]="'#xp'" id="xp-a">
 				<p class="nav-element p-style p-small"> {{ currentPack[9] }} </p>
 			</a>
-            <a class="nav-element-a" [ngx-scroll-to]="'#projects'">
+            <a class="nav-element-a" [ngx-scroll-to]="'#projects'" id="projects-a">
 				<p class="nav-element p-style p-small"> {{ currentPack[31] }} </p>
 			</a>
-            <a class="nav-element-a" [ngx-scroll-to]="'#footer'">
+            <a class="nav-element-a" [ngx-scroll-to]="'#footer'" id="footer-a">
 				<p class="nav-element p-style p-small"> {{ currentPack[34] }} </p>
 			</a>
         </div>
