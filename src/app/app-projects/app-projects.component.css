@@ -9,9 +9,6 @@
     margin-bottom: 50px;
     background-color: rgb(0,0,0);
 }
-.project-item-ux {
-    width: 100%;
-}
 .project-item-inner {
     background-position: center;
     background-size: cover;
@@ -20,68 +17,14 @@
     border: 1px solid lightgrey;
     position: relative;
 }
-.project-item-layer {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0, 0.75);
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    flex-direction: column;
-    position: relative;
-    transition: 0.3s;
-    display: flex;
+.millionaire {
+    background-image: url('../../assets/pics/millionaire.png');
 }
-.project-item-inner:hover .project-item-layer {
-    opacity: 1;
+.tiny-journeys {
+    background-image: url('../../assets/pics/tinyjourneys.png');
 }
-.project-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 75%;
-    margin-top: 20px;
-}
-.project-p {
-    color: white;
-}
-.meta-p {
-    font-weight: bold;
-}
-.project-button-item:hover .project-p {
-    display: none;
-}
-.project-button-item:hover .project-i {
-    display: block;
-}
-.project-header {
-    color: white;
-    margin: 0;
-    width: 100%;
-    text-align: center;
-}
-.project-meta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 5px;
-}
-.project-icons {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 0 20px 20px 20px;
-}
-.project-icon {
-    width: 20px;
-    height: 20px;
-    background-size: cover;
-    margin: 5px;
+.infokiosks {
+    background-image: url('../../assets/pics/infokioski.png');
 }
 .meta-label {
     top: 0;
@@ -99,10 +42,59 @@
     justify-content: center;
     align-items: center;
 }
-.project-i {
+.project-p {
     color: white;
+}
+.meta-p {
+    font-weight: bold;
+}
+.project-item-layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.75);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    flex-direction: column;
+    position: relative;
+    transition: 0.3s;
+    display: flex;
+}
+.project-item-inner:hover .project-item-layer {
+    opacity: 1;
+}
+.project-meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+}
+.project-header {
+    color: white;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+.project-description {
+    padding: 10px 20px;
+    text-align: center;
+}
+.project-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 20px 20px 20px;
+}
+.project-icon {
+    width: 20px;
+    height: 20px;
+    background-size: cover;
     margin: 5px;
-    display: none;
 }
 .python {
     background-image: url("../../assets/pics/python.png");
@@ -116,12 +108,12 @@
 .axure {
     background-image: url("../../assets/pics/axure.jpg");
 }
-.fa-more {
-    background-image: url("../../assets/pics/more.png");
-    background-size: cover;
-    background-position: center;
-    width: 16px;
-    height: 16px;
+.project-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 75%;
+    margin-top: 20px;
 }
 .project-button-item {
     width: 150px;
@@ -137,25 +129,31 @@
     border: transparent;
     cursor: pointer;
 }
+.project-button-item:hover .project-p {
+    display: none;
+}
+.project-button-item:hover .project-i {
+    display: block;
+}
 .meta-label-dev, .project-button-item-dev:hover {
     background-color: #3B5998;
 }
 .meta-label-ux, .project-button-item-ux:hover {
     background-color: darkmagenta;
 }
-.millionaire {
-    background-image: url('../../assets/pics/millionaire.png');
+.project-i {
+    color: white;
+    margin: 5px;
+    display: none;
 }
-.tiny-journeys {
-    background-image: url('../../assets/pics/tinyjourneys.png');
+.fa-more {
+    background-image: url("../../assets/pics/more.png");
+    background-size: cover;
+    background-position: center;
+    width: 16px;
+    height: 16px;
 }
-.infokiosks {
-    background-image: url('../../assets/pics/infokioski.png');
-}
-.project-description {
-    padding: 10px 20px;
-    text-align: center;
-}
+
 @media (max-width: 1060px) {
     .projects-container {
         flex-direction: column;

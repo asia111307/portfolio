@@ -4,10 +4,6 @@ footer {
 	text-align: center;
 	display: block;
 }
-.footer-icon {
-	font-size: 25px;
-	padding: 0 5px;
-}
 .info {
 	display: flex;
 	align-items: center;
@@ -15,14 +11,16 @@ footer {
 	width: 100%;
 	padding: 30px 50px;
 }
-.copyright {
-	text-align: center;
-	font-size: 12px;
-	background-color: #252726;
-	padding: 10px 0;
+.footer-info-item {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	padding: 10px 30px;
 }
-.text-to-left {
-	text-align: left;
+.footer-icon {
+	font-size: 25px;
+	padding: 0 5px;
+	margin-right: 5px;
 }
 .pclass {
 	font-size: 16px;
@@ -30,26 +28,21 @@ footer {
 	margin: 0;
 	color: darkgray;
 }
-a {
-	color: white;
+.copyright {
+	text-align: center;
+	font-size: 12px;
+	background-color: #252726;
+	padding: 10px 0;
 }
-.footer-info-item i {
-	margin-right: 5px;
-}
-.footer-info-item {
-	display: flex;
-	align-content: center;
-	align-items: center;
-	padding: 10px 30px;
+.github-span {
+	display: inline-block;
 }
 .github-button {
 	margin-left: 10px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-.github-span {
-	display: inline-block;
+	color: white;
 }
 .github-btn {
 	color: white;
@@ -64,24 +57,11 @@ a {
 	cursor: pointer;
 }
 
-
 @media (max-width: 1060px) {
-	/*footer p, footer .pclass {*/
-		/*font-size: 1.2em;*/
-	/*}*/
-	.social button {
-		width: 55px;
-		height: 55px;
-		margin: 27px 7px;
-	}
-	.icon-btn {
-		font-size: 33px;
-	}
 	.info {
 		flex-direction: column;
 	}
 	.fa-github {
 		font-size: 16px;
 	}
-
 }

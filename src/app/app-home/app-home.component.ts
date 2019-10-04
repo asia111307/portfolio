@@ -5,5 +5,4 @@ import {Component} from '@angular/core';
   templateUrl: './app-home.component.html',
   styleUrls: ['./app-home.component.css']
 })
-export class AppHomeComponent {
-}
+export class AppHomeComponent {}

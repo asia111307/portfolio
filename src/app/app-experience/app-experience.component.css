@@ -1,46 +1,50 @@
-.iframe {
-    position: relative;
-    overflow: hidden;
-    max-width: 730px;
-    max-height: 1030px;
-    min-width: 320px;
-    min-height: 1030px;
-    margin: 0 auto;
-    z-index: -1;
-    display: none;
-}
-.i-frame {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
 .experience-tree {
     position: relative;
-}
-
-.experience-line-div {
-    position: absolute;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    flex-direction: column;
-}
-.experience-line {
-    padding: 1px;
-    background-color: darkgray;
-    transform: rotate(90deg);
-    width: 270px
 }
 .tree-box {
     width: 100%;
     display: flex;
     align-items: center;
     position: relative;
+}
+.tree-box-left {
+    justify-content: flex-start;
+    position: relative;
+}
+.tree-box-right {
+    justify-content: flex-end;
+    position: relative;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 14px solid rgba(45, 134, 229, 0.6);
+    position: absolute;
+    top: 20px;
+    z-index: 2;
+    transition: all 0.7s;
+    transition-delay: 0.5s;
+}
+.triangle-left {
+    transform: rotate(90deg);
+    left: 40%;
+}
+.triangle-right {
+    transform: rotate(270deg);
+    right: 40%;
+}
+.year-label {
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    left: calc(50% - 100px);
+    background-color: white;
+    width: 200px;
+    padding: 5px 10px;
+    top: 10px;
+    z-index: 1;
 }
 .tree-box-inner {
     width: 40%;
@@ -56,20 +60,6 @@
     display: flex;
     opacity: 0;
 }
-.tree-box-inner:hover {
-    background-color: rgba(45, 134, 229, 0.6);
-    border-color: transparent;
-}
-.tree-box-inner:hover + .experience-line-div .experience-line {
-    background-color: rgba(45, 134, 229, 0.6);
-}
-.tree-box-inner:hover p, .tree-box-inner:hover i {
-    color: white;
-}
-.tree-box-left {
-    justify-content: flex-start;
-    position: relative;
-}
 .tree-box-inner-left {
     left: -500px;
     transition: all 1s;
@@ -79,79 +69,15 @@
     right: -500px;
     transition: all 1s;
 }
-.tree-box-right {
-    justify-content: flex-end;
-    position: relative;
+.tree-box-inner:hover {
+    background-color: rgba(45, 134, 229, 0.6);
+    border-color: transparent;
 }
-.tree-box-inner-p {
-    width: 100%;
-    margin-bottom: 0;
+.tree-box-inner:hover + .experience-line-div .experience-line {
+    background-color: rgba(45, 134, 229, 0.6);
 }
-.triangle {
-    width: 0;
-    height: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 14px solid rgba(45, 134, 229, 0.6);
-    position: absolute;
-    top: 20px;
-    z-index: 2;
-    transition: all 0.7s;
-    transition-delay: 0.5s;
-}
-.circle {
-    width: 14px;
-    height: 14px;
-    background: darkgray;
-    border-radius: 50%;
-    position: absolute;
-    left: calc(50% - 7px);
-    z-index: 1;
-}
-.circle-top {
-    top: -30px;
-}
-.circle-down {
-    bottom: -30px;
-}
-.triangle-left {
-    transform: rotate(90deg);
-    left: 40%;
-}
-.triangle-right {
-    transform: rotate(270deg);
-    right: 40%;
-}
-.curvedarrow {
-    position: relative;
-    width: 0;
-    height: 0;
-    border-top: 9px solid transparent;
-    border-right: 9px solid red;
-    transform: rotate(10deg);
-}
-.curvedarrow:after {
-    content: "";
-    position: absolute;
-    border: 0 solid transparent;
-    border-top: 3px solid red;
-    border-radius: 20px 0 0 0;
-    top: -12px;
-    left: -9px;
-    width: 12px;
-    height: 12px;
-    transform: rotate(45deg);
-}
-.year-label {
-    text-align: center;
-    font-weight: bold;
-    position: absolute;
-    left: calc(50% - 100px);
-    background-color: white;
-    width: 200px;
-    padding: 5px 10px;
-    top: 10px;
-    z-index: 1;
+.tree-box-inner:hover .tree-box-inner-p, .tree-box-inner:hover .tree-box-fa {
+    color: white;
 }
 .tree-box-fa {
     font-size: 25px;
@@ -175,10 +101,74 @@
 .fa-graduation-cap {
     color: #3B5998;
 }
+.tree-box-inner-p {
+    width: 100%;
+    margin-bottom: 0;
+}
+.experience-line-div {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+.circle {
+    width: 14px;
+    height: 14px;
+    background: darkgray;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 7px);
+    z-index: 1;
+}
+.circle-top {
+    top: -30px;
+}
+.circle-down {
+    bottom: -30px;
+}
+.experience-line {
+    padding: 1px;
+    background-color: darkgray;
+    transform: rotate(90deg);
+    width: 270px
+}
+/*.curvedarrow {*/
+    /*position: relative;*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*border-top: 9px solid transparent;*/
+    /*border-right: 9px solid red;*/
+    /*transform: rotate(10deg);*/
+/*}*/
+/*.curvedarrow:after {*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*border: 0 solid transparent;*/
+    /*border-top: 3px solid red;*/
+    /*border-radius: 20px 0 0 0;*/
+    /*top: -12px;*/
+    /*left: -9px;*/
+    /*width: 12px;*/
+    /*height: 12px;*/
+    /*transform: rotate(45deg);*/
+/*}*/
 
 @media (max-width: 1060px) {
+    .tree-box {
+        display: block;
+        position: relative;
+    }
     .triangle, .triangle-left, .triangle-right, .experience-line-div {
         display: none;
+    }
+    .year-label {
+        position: unset;
+        margin-bottom: 0;
+        text-align: left;
+        margin-left: 30px;
     }
     .tree-box-inner {
         width: 100%;
@@ -187,28 +177,15 @@
         left: 0;
         right: 0;
     }
-    .year-label {
-        position: unset;
-        margin-bottom: 0;
-        text-align: left;
-        margin-left: 30px;
-    }
-    .tree-box {
-        display: block;
-        position: relative;
-    }
-    /*.tree-box-fa {*/
-        /*display: none;*/
-    /*}*/
-    .tree-box-inner-p {
-        text-align: left;
-    }
     .tree-box-fa {
         padding: 5px;
     }
     .tree-box-fa-right {
         right: initial;
         left: 0;
+    }
+    .tree-box-inner-p {
+        text-align: left;
     }
 }
 

@@ -44,7 +44,6 @@
 	background: none;
 	border: 1px solid lightgrey;
 }
-
 .icon-btn:hover {
 	color: #FFFFFF;
 	border-color: transparent;
@@ -60,9 +59,6 @@
 }
 .linkedin:hover {
 	background-color: #007BB6
-}
-.social button:hover {
-	color: white;
 }
 
 @media (max-width: 1060px) {

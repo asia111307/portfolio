@@ -1,5 +1,4 @@
 import {TestBed, inject} from '@angular/core/testing';
-
 import {ChangeLangService} from './change-lang.service';
 
 describe('ChangeLangService', () => {

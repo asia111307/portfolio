@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {ChangeLangService} from '../../change-lang.service';
 
 @Component({
@@ -6,19 +6,11 @@ import {ChangeLangService} from '../../change-lang.service';
   templateUrl: './app-ux-screen.component.html',
   styleUrls: ['./app-ux-screen.component.css']
 })
-export class AppUxScreenComponent implements OnInit {
-    currentLang: string;
+export class AppUxScreenComponent {
     currentPack: any;
-
     constructor(private changeLangService: ChangeLangService) {
-        this.changeLangService.currentLanguage$.subscribe((newLang: string) => {
-            this.currentLang = newLang;
-        });
-        this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => {
-            this.currentPack = newPack;
-        });
+        this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => {this.currentPack = newPack; });
     }
-
     toggleOpen() {
         const element = document.getElementsByClassName('info-button')[0];
         (<HTMLElement>element).addEventListener('click', function () {
@@ -38,7 +30,4 @@ export class AppUxScreenComponent implements OnInit {
             }
         });
     };
-    ngOnInit() {
-  }
-
 }

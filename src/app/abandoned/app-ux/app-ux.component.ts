@@ -7,13 +7,9 @@ import {ChangeLangService} from '../../change-lang.service';
   styleUrls: ['./app-ux.component.css']
 })
 export class AppUxComponent implements OnInit {
-
-    currentLang: string;
     currentPack: any;
-
     constructor(private changeLangService: ChangeLangService) {
-        this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; } );
-        this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; } );
+        this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; });
     }
     showProjectDetails = function() {
         const content = document.getElementsByClassName('example-ux');

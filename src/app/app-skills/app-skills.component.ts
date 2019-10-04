@@ -7,15 +7,11 @@ import {ChangeLangService} from '../change-lang.service';
   styleUrls: ['./app-skills.component.css']
 })
 export class AppSkillsComponent implements OnInit {
-  currentLang: string;
   currentPack: any;
-
   constructor(private changeLangService: ChangeLangService) {
-        this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; } );
         this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; } );
   }
-
-  ngOnInit() {
+  setEventListenerScroll() {
       window.addEventListener('scroll', function() {
           const skills = document.getElementsByClassName('skill-box-description');
           const current_window_width = window.innerWidth;
@@ -27,5 +23,8 @@ export class AppSkillsComponent implements OnInit {
               }
           }
       });
+  };
+  ngOnInit() {
+      this.setEventListenerScroll();
   }
 }

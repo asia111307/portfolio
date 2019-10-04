@@ -7,12 +7,9 @@ import {ChangeLangService} from '../change-lang.service';
   styleUrls: ['./app-top-nav.component.css']
 })
 export class AppTopNavComponent implements OnInit {
-  currentLang: string;
   currentPack: any;
-
   constructor(private changeLangService: ChangeLangService) {
-        this.changeLangService.currentLanguage$.subscribe((newLang: string) => { this.currentLang = newLang; } );
-        this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; } );
+        this.changeLangService.currentLanguagePack$.subscribe((newPack: any) => { this.currentPack = newPack; });
   }
   changeLangToENG() {
       this.changeLangService.changeLangToENG();
@@ -20,19 +17,7 @@ export class AppTopNavComponent implements OnInit {
   changeLangToPL() {
       this.changeLangService.changeLangToPL();
   }
-  ngOnInit() {
-        document.getElementById('nav-icon1').addEventListener('click', function() {
-            this.classList.toggle('open');
-            const menu_items = document.getElementsByClassName('nav-hidden');
-            const menu = this;
-            for (let i=0; i< menu_items.length; i++) {
-                if (menu.classList.contains('open')) {
-                    (<HTMLElement>menu_items[i]).style.display = 'flex';
-                } else {
-                    (<HTMLElement>menu_items[i]).style.display = 'none';
-                }
-            }
-        });
+  setEventListenerResize() {
       const current_window_width = window.innerWidth;
       if (current_window_width <= 1060) {
           document.getElementById('nav-icon1').click();
@@ -45,6 +30,24 @@ export class AppTopNavComponent implements OnInit {
               document.getElementById('nav-icon1').click();
           }
       });
+  };
+  setEventListenerMenu() {
+      document.getElementById('nav-icon1').addEventListener('click', function() {
+          this.classList.toggle('open');
+          const menu_items = document.getElementsByClassName('nav-hidden');
+          const menu = this;
+          for (let i=0; i< menu_items.length; i++) {
+              if (menu.classList.contains('open')) {
+                  (<HTMLElement>menu_items[i]).style.display = 'flex';
+              } else {
+                  (<HTMLElement>menu_items[i]).style.display = 'none';
+              }
+          }
+      });
+  };
+  ngOnInit() {
+      this.setEventListenerMenu();
+      this.setEventListenerResize();
   }
 }
 
