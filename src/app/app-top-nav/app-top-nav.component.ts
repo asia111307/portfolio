@@ -38,6 +38,13 @@ export class AppTopNavComponent implements OnInit {
           document.getElementById('nav-icon1').click();
           document.getElementById('nav-icon1').click();
       }
+      window.addEventListener('resize', function() {
+          const current_window_width = window.innerWidth;
+          if ((current_window_width >= 1060 && !document.getElementById('nav-icon1').classList.contains('open')) ||
+              (current_window_width <= 1060 && document.getElementById('nav-icon1').classList.contains('open'))) {
+              document.getElementById('nav-icon1').click();
+          }
+      });
   }
 }
 
