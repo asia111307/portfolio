@@ -15,6 +15,7 @@
 	width: 300px;
 	background-image: url("../../assets/pics/photo.jpg");
 	background-size: cover;
+	box-shadow: 5px 5px 5px lightgrey;
 }
 
 @media (max-width: 1060px) {

@@ -5,6 +5,9 @@
     align-items: center;
     flex-direction: column;
     margin: 40px 0;
+    box-shadow: 5px 5px 5px lightgrey;
+    border: 1px solid lightgrey;
+    padding: 30px;
 }
 .skills-container, .skill-box-items, .skill-box-item-span, .skill-box-item-meta {
     display: flex;
