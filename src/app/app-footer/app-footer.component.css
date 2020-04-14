@@ -17,6 +17,10 @@ footer {
 	align-items: center;
 	padding: 10px 30px;
 }
+.email {
+	box-shadow: 3px 3px 3px 0 rgba(0,0,0,0.75);
+    background-color: rgba(45, 134, 229, 0.6);
+}
 .footer-icon {
 	font-size: 25px;
 	padding: 0 5px;
@@ -27,6 +31,9 @@ footer {
 	font-weight: 400;
 	margin: 0;
 	color: darkgray;
+}
+.email .pclass {
+	color: white;
 }
 .copyright {
 	text-align: center;
@@ -60,6 +67,15 @@ footer {
 @media (max-width: 1060px) {
 	.info {
 		flex-direction: column;
+	}
+	.location {
+		order: 1
+	}
+	.phone {
+		order: 2
+	}
+	.email {
+		order: 3
 	}
 	.fa-github {
 		font-size: 16px;

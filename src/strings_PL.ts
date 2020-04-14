@@ -90,7 +90,7 @@ export const STRINGS_PL = {
     88: 'Kod',
     89: 'Stara wersja napisana w\xA0Pythonie',
     90: 'Nowa wersja napisana w\xA0Angularze',
-    91: 'Napisane w\xA0Pythonie (Flasku)',
+    91: 'Napisane w\xA0Pythonie',
     92: 'Napisane w\xA0Angularze',
     93: 'Tiny Journeys',
     94: 'Konteneryzaca przy użyciu Dockera',
@@ -145,5 +145,16 @@ export const STRINGS_PL = {
     143: 'Z\xA0tymi technologiami, językami, narzędziami i\xA0programami spędzam (lub spędzałam) najwięcej czasu. Myślę, że potrafię się w\xA0nich już całkiem dobrze odnaleźć i\xA0tworzyć przy ich pomocy coraz bardziej skomplikowane rzeczy. Nie jest to jeszcze jednak wysoce zaawansowany poziom i\xA0przy bardziej skomplikowanych zadaniach wciąż przydaje mi się pomoc.',
     144: 'Te technologie, języki, narzędzia i\xA0programy są mi znane na raczej wciąż podstawowym poziomie, lecz korzystam z\xA0nich coraz częściej i\xA0za każdym razem staram się uzupełniać wiedzę na ich temat o\xA0nowe funkcjonalności. Uczę się ich głównie „przy okazji”, gdy potrzebuję ich w\xA0swoim projekcie lub poznałam je na uczelni i\xA0będę w\xA0najbliższym czasie korzystać z\xA0nich jeszcze bardziej.',
     145: 'Tych technologii, języków, narzędzi i\xA0programów raczej rzadko używam lub korzystam z nich tylko na podstawowym poziomie. Wiem, do czego służą, jak działają oraz co można przy ich pomocy osiągnąć i\xA0w\xA0razie potrzeby jestem w\xA0stanie w\xA0dość szybkim czasie je bardziej przyswoić. ',
-
+    146: 'Laravel',
+    147: '@CHECK',
+    148: 'System pozwala prowadzącym sprawdzać obecność na zajęciach oraz monitorować zajęte miejsca. Współpracuje z czytnikiem ELS. Projekt stworzony grupowo na uczelni, ja wykonałam całą aplikację webową. ',
+    149: 'Napisane w PHP',
+    150: 'Napisane w Laravelu',
+    151: 'Napisane we Flasku',
+    152: 'Preferowana forma kontaktu',
+    153: 'Elixir',
+    154: 'Flutter',
+    155: 'Praca',
+    156: 'Uczelnia wyższa',
+    157: 'Szkoła ponadgimnazjalna'
 };

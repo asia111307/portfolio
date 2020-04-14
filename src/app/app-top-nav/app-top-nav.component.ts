@@ -30,7 +30,7 @@ export class AppTopNavComponent implements OnInit {
               document.getElementById('nav-icon1').click();
           }
       });
-  };
+  }
   setEventListenerMenu() {
       document.getElementById('nav-icon1').addEventListener('click', function() {
           this.classList.toggle('open');
@@ -44,7 +44,7 @@ export class AppTopNavComponent implements OnInit {
               }
           }
       });
-  };
+  }
   ngOnInit() {
       this.setEventListenerMenu();
       this.setEventListenerResize();

@@ -109,6 +109,9 @@
 .php {
     background-image: url("../../assets/pics/php.png");
 }
+.laravel {
+    background-image: url("../../assets/pics/laravel.png");
+}
 .excel {
     background-image: url("../../assets/pics/excel.png");
 }
@@ -135,6 +138,12 @@
 }
 .django {
     background-image: url("../../assets/pics/django.jpg");
+}
+.elixir {
+    background-image: url("../../assets/pics/elixir.png");
+}
+.flutter {
+    background-image: url("../../assets/pics/flutter.png");
 }
 .skill-box-item-meta {
     flex-direction: column;

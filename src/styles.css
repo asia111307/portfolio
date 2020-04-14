@@ -155,7 +155,7 @@ a:link, a:visited, a:active, a:hover {
 }
 @media (max-width: 1060px) {
 	.h-style {
-		font-size: 35px;
+		font-size: 25px;
 	}
 	.icon-btn {
 		font-size: 33px;

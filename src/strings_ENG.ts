@@ -145,4 +145,16 @@ export const STRINGS_ENG = {
     143: 'I\xA0spend the most of time with these technologies, languages, tools and programs. I\xA0think I\xA0can manage with them quite well and use them to create more and more complicated things. However, it’s not a\xA0highly advanced level yet and I\xA0still need some help with more complex tasks.',
     144: 'I\xA0know these technologies, languages, tools and programs at a\xA0rather basic level, but I\xA0use them more and more often and every time I\xA0try to supplement my knowledge about their functionalities. I\xA0mainly learn them "by the way" when I\xA0need them in my project, or I\xA0met them at the university classes and I’ll be using them even more in the near future.',
     145: 'I\xA0use these technologies, languages, tools and programs rather rarely or only at a\xA0basic level. I\xA0know basic information about them, how they work and what can be achieved with them. If necessary, I\xA0can learn more about them quite quickly.',
+    146: 'Laravel',
+    147: '@CHECK',
+    148: 'This system allows lecturers to check attendance and monitor taken places. It can work with student ID card reader. Project created in groups at the university, my part of the work covered the entire web application.',
+    149: 'Made with PHP',
+    150: 'Made with Laravel',
+    151: 'Made with Flask',
+    152: 'Preferred form of contact',
+    153: 'Elixir',
+    154: 'Flutter',
+    155: 'Work',
+    156: 'University',
+    157: 'Secondary school'
 };

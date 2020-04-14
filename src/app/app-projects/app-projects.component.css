@@ -14,7 +14,7 @@
 .project-item-inner {
     background-position: center;
     background-size: cover;
-    height: 300px;
+    height: 350px;
     width: auto;
     border: 1px solid lightgrey;
     position: relative;
@@ -29,6 +29,9 @@
 }
 .infokiosks {
     background-image: url('../../assets/pics/infokioski.png');
+}
+.atcheck {
+    background-image: url('../../assets/pics/atcheck.png');
 }
 .meta-label {
     top: 0;
@@ -103,8 +106,18 @@
 .python {
     background-image: url("../../assets/pics/python.png");
 }
+.flask {
+    background-image: url("../../assets/pics/flask.png");
+}
 .angular {
     background-image: url("../../assets/pics/angular.png");
+}
+.php {
+    background-image: url("../../assets/pics/php-w.png");
+}
+.laravel {
+    background-image: url("../../assets/pics/laravel-w.png");
+    width: 30px;
 }
 .docker {
     background-image: url("../../assets/pics/docker.png");
