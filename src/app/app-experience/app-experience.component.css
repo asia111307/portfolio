@@ -190,5 +190,8 @@
     .tree-box-inner-p {
         text-align: left;
     }
+    .tree-box-inner:hover .tree-box-fa {
+        color: initial;
+    }
 }
 
