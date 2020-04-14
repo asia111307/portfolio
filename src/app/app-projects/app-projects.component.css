@@ -1,3 +1,6 @@
+#projects {
+    background-color: #f8f9fa;
+}
 .projects-container {
     display: flex;
     justify-content: space-between;
@@ -10,6 +13,7 @@
     background-color: rgb(0,0,0);
     opacity: 0;
     transition: all 1s;
+
 }
 .project-item-inner {
     background-position: center;
@@ -18,8 +22,7 @@
     width: auto;
     border: 1px solid lightgrey;
     position: relative;
-    box-shadow: 5px 5px 5px lightgrey;
-
+    box-shadow: 0 0 26px 0 lightgrey;
 }
 .millionaire {
     background-image: url('../../assets/pics/millionaire.png');
