@@ -36,6 +36,9 @@
 .atcheck {
     background-image: url('../../assets/pics/atcheck.png');
 }
+.drug {
+    background-image: url('../../assets/pics/drug.png');
+}
 .meta-label {
     top: 0;
     left: 0;
@@ -159,6 +162,9 @@
 }
 .meta-label-ux, .project-button-item-ux:hover {
     background-color: darkmagenta;
+}
+.meta-label-data, .project-button-item-data:hover {
+    background-color: rgb(255, 212, 0);
 }
 .project-i {
     color: white;

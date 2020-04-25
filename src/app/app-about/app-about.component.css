@@ -4,9 +4,16 @@
 .about-inner {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 .about-text {
-	width: 70%;
+	margin-right: 50px;
+}
+.about-text-all {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
 }
 .about-img {
 	width: 30%;

@@ -31,6 +31,9 @@
 }
 .social {
 	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .icon-btn {
 	height: 40px;
@@ -59,6 +62,17 @@
 }
 .linkedin:hover {
 	background-color: #007BB6
+}
+.kaggle:hover {
+	background-color: #48ABBF
+}
+.icon-kaggle {
+	background-image: url("../../assets/pics/kaggle.png");
+	background-size: cover;
+	background-position: center;
+	width: 80%;
+	height: 80%;
+	margin: 10%;
 }
 
 @media (max-width: 1060px) {

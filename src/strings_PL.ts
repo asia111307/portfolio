@@ -1,6 +1,8 @@
 export const STRINGS_PL = {
     0: 'Cześć!',
-    1: 'Jestem obecnie studentką drugiego roku analizy i\xA0przetwarzania danych na Wydziale Matematyki i\xA0Informatyki Uniwersytetu im. Adama Mickiewicza w\xA0Poznaniu. Wcześniej ukończyłam studia licencjackie z kognitywistyki, na której zainteresowałam się programowaniem i\xA0tematyką User Experience. Pierwsze linijki kodu pisałam w\xA0Pythonie i\xA0były to proste skrypty tworzone na zajęciach na uczelni. „Po godzinach” starałam się czytać i\xA0pisać więcej w\xA0tym języku i\xA0udało mi się stworzyć prostą wersję Milionerów. Zainteresowałam się także web developmentem i\xA0później przeniosłam grę do aplikacji webowej napisanej w\xA0Angularze. Napisałam także miniblog, który wykorzystuje Pythona jako język backendowy. Na studiach magisterskich zaczęłam wykorzystywać Pythona do zastosowań z\xA0obszaru statystyki i\xA0uczenia maszynowego. Jednym z\xA0moich celów na najbliższy czas jest podniesienie poziomu swojej wiedzy właśnie z\xA0zakresu machine learningu i\xA0sztucznej inteligencji oraz stworzenie kilku niebanalnych projektów z\xA0tym związanych.',
+    1.1: 'Jestem obecnie studentką drugiego roku analizy i\xA0przetwarzania danych na Wydziale Matematyki i\xA0Informatyki Uniwersytetu im.\xA0Adama Mickiewicza w\xA0Poznaniu. Wcześniej ukończyłam studia licencjackie z\xA0kognitywistyki, na której zainteresowałam się programowaniem i\xA0tematyką User Experience.',
+    1.2: 'Pierwsze linijki kodu pisałam w\xA0Pythonie i\xA0były to proste skrypty tworzone na zajęciach na uczelni. „Po\xA0godzinach” starałam się czytać i\xA0pisać więcej w\xA0tym języku i\xA0udało mi się stworzyć prostą wersję Milionerów. Zainteresowałam się także web developmentem i\xA0później przeniosłam grę do aplikacji webowej napisanej w\xA0Angularze. Napisałam także miniblog, który wykorzystuje Pythona jako język backendowy.',
+    1.3: 'Na studiach magisterskich zaczęłam wykorzystywać Pythona do zastosowań z\xA0obszaru statystyki i\xA0uczenia maszynowego. Jednym z\xA0moich celów na najbliższy czas jest podniesienie poziomu swojej wiedzy właśnie z\xA0zakresu machine learningu i\xA0sztucznej inteligencji oraz stworzenie kilku niebanalnych projektów z\xA0tym związanych.',
     2: 'Projekty programistyczne',
     3: 'Milionerzy 1.0',
     4: 'Drobne programy',
@@ -156,5 +158,8 @@ export const STRINGS_PL = {
     154: 'Flutter',
     155: 'Praca',
     156: 'Uczelnia wyższa',
-    157: 'Szkoła ponadgimnazjalna'
+    157: 'Szkoła ponadgimnazjalna',
+    158: 'Analiza zażywalności używek',
+    159: '',
+    160: 'Notebook'
 };
