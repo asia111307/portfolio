@@ -162,4 +162,8 @@ export const STRINGS_ENG = {
     158: 'Drug consumption analysis',
     159: '',
     160: 'Notebook',
+    161: 'Dlaczego nie lubimy kupowania biletów?',
+    162: '',
+    163: 'Made with Adobe inDesign',
+
 };

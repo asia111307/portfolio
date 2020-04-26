@@ -39,6 +39,9 @@
 .drug {
     background-image: url('../../assets/pics/drug.png');
 }
+.tickets {
+    background-image: url('../../assets/pics/tickets.jpg');
+}
 .meta-label {
     top: 0;
     left: 0;
@@ -130,6 +133,9 @@
 }
 .axure {
     background-image: url("../../assets/pics/axure.jpg");
+}
+.indesign {
+    background-image: url("../../assets/pics/id.png");
 }
 .project-buttons {
     display: flex;

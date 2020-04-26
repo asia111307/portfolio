@@ -161,5 +161,8 @@ export const STRINGS_PL = {
     157: 'Szkoła ponadgimnazjalna',
     158: 'Analiza zażywalności używek',
     159: '',
-    160: 'Notebook'
+    160: 'Notebook',
+    161: 'Dlaczego nie lubimy kupowania biletów?',
+    162: '',
+    163: 'Stworzone przy pomocy Adobe inDesign',
 };
