@@ -1,7 +1,7 @@
 export const STRINGS_ENG = {
     0: 'About',
     1.1: 'I\xA0am currently a\xA0second year student of data analysis and processing at the Faculty of Mathematics and Computer Science of the Adam Mickiewicz University in Poznań. I\xA0have completed a\xA0bachelor\'s degree in cognitive science, where I\xA0became interested in programming and User Experience.',
-    1.2: 'I\xA0wrote the first lines of simple scripts in Python during classes at the university. In my free time I\xA0tried to read and write more in this language and finally I\xA0created a simple version of Millionaire game. I\xA0also became interested in webdevelopment and then I\xA0moved the game to a\xA0web application written in Angular. I\xA0also wrote a\xA0miniblog that uses Python as a\xA0backend language.',
+    1.2: 'I\xA0wrote the first lines of simple scripts in Python during classes at the university. In my free time I\xA0tried to read and write more in this language and finally I\xA0created a simple version of Millionaire game. I\xA0also became interested in webdevelopment and then I\xA0moved the game to a\xA0web application written in Angular (to be completely happy, I now need to rewrite the game to a mobile application on my own). I\xA0also wrote a\xA0miniblog that uses Python as a\xA0backend language.',
     1.3: 'During my master\'s degree I\xA0started using Python in the field of statistics and machine learning. One of my goals for the near future is to raise the level of my knowledge in the field of machine learning and artificial intelligence and to create several original projects related to it.',
     2: 'Programming projects',
     3: 'Millionaire 1.0',
@@ -160,10 +160,10 @@ export const STRINGS_ENG = {
     156: 'University',
     157: 'Secondary school',
     158: 'Drug consumption analysis',
-    159: '',
+    159: 'Analysis of data related to drug consumption. The existence of potential relationships among demographic data, drug consumption and personality traits was also checked.',
     160: 'Notebook',
-    161: 'Dlaczego nie lubimy kupowania biletów?',
-    162: '',
+    161: 'Why don\'t we like buying tickets?',
+    162: 'The project concerned traveling by train. It consisted both in identifying the needs of PKP users and the difficulties they encountered when buying tickets, as well as discussing and testing proposals for solutions to these problems.',
     163: 'Made with Adobe inDesign',
 
 };
