@@ -84,23 +84,30 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 5px;
+    height: 75%;
 }
 .project-header {
     color: white;
     margin: 0;
-    width: 100%;
+    width: 75%;
     text-align: center;
+    padding: 10px;
+}
+.project-description-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
 }
 .project-description {
-    padding: 10px 20px;
     text-align: center;
+    margin: auto;
+    padding: 20px;
 }
 .project-icons {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -141,9 +148,10 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 75%;
+    width: 70%;
+    height: 25%;
 }
-.project-button-item {
+.project-button-a {
     width: 150px;
     height: 50px;
     background: none;
@@ -153,14 +161,14 @@
     align-items: center;
     justify-content: center;
 }
-.project-button-item:hover {
+.project-button-a:hover {
     border: transparent;
     cursor: pointer;
 }
-.project-button-item:hover .project-p {
+.project-button-a:hover .project-p {
     display: none;
 }
-.project-button-item:hover .project-i {
+.project-button-a:hover .project-i {
     display: block;
 }
 .meta-label-dev, .project-button-item-dev:hover {
@@ -196,7 +204,7 @@
     }
     .project-item-layer {
         display: flex;
-        height: 50%;
+        height: 40%;
         opacity: 1;
     }
     .project-item-inner {
@@ -207,14 +215,43 @@
     .project-p, .project-icons {
         display: none;
     }
-    .project-item:hover .project-description {
+    .project-meta {
+        align-items: center;
+        justify-content: center;
+    }
+    .project-meta {
+        height: 60%;
+    }
+    .project-buttons {
+        height: 40%;
+    }
+    .project-header {
+        width: 100%;
+    }
+    .project-description-div, .project-description {
+        display: none;
+    }
+    .project-item:hover .project-description-div {
         display: flex;
     }
+    .project-item:hover .project-description {
+        display: flex;
+        overflow-y: scroll;
+        height: 100%;
+    }
+    /*.project-description {*/
+        /*height: 50%;*/
+        /*overflow-y: scroll;*/
+    /*}*/
     .project-item:hover .meta-label {
         display: none;
     }
+    .project-item:hover .project-meta {
+        height: 75%;
+    }
     .project-item:hover .project-buttons {
         margin-top: 0;
+        height: 25%;
     }
     .project-item:hover .project-item-layer {
         height: 100%;
@@ -227,7 +264,7 @@
         width: 25px;
         height: 25px;
     }
-    .project-button-item {
+    .project-button-a {
         width: 120px;
         border-color: transparent;
     }
