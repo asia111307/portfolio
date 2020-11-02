@@ -1,9 +1,10 @@
 export const STRINGS_PL = {
     0: 'Cześć!',
-    1.1: 'Jestem obecnie studentką drugiego roku analizy i\xA0przetwarzania danych na Wydziale Matematyki i\xA0Informatyki Uniwersytetu im.\xA0Adama Mickiewicza w\xA0Poznaniu. Wcześniej ukończyłam studia licencjackie z\xA0kognitywistyki, na której zainteresowałam się programowaniem i\xA0tematyką User Experience.',
+    1.1: 'Jestem obecnie studentką pierwszego roku informatyki na Wydziale Matematyki i\xA0Informatyki Uniwersytetu im.\xA0Adama Mickiewicza w\xA0Poznaniu. Wcześniej ukończyłam studia licencjackie z\xA0kognitywistyki, na której zainteresowałam się programowaniem i\xA0tematyką User Experience oraz studia magisterskie z analizy i przetwarzania danych.',
     1.2: 'Pierwsze linijki kodu pisałam w\xA0Pythonie i\xA0były to proste skrypty tworzone na zajęciach na uczelni. „Po\xA0godzinach” starałam się czytać i\xA0pisać więcej w\xA0tym języku i\xA0udało mi się stworzyć prostą wersję Milionerów. Zainteresowałam się także web developmentem i\xA0później przeniosłam grę do aplikacji webowej napisanej w\xA0Angularze (do pełni szczęścia zostało mi jeszcze samodzielne przepisanie gry na aplikację mobilną). Napisałam także miniblog, który wykorzystuje Pythona jako język backendowy.',
     1.3: 'Na studiach magisterskich zaczęłam wykorzystywać Pythona do zastosowań z\xA0obszaru statystyki i\xA0uczenia maszynowego. Jednym z\xA0moich celów na najbliższy czas jest podniesienie poziomu swojej wiedzy właśnie z\xA0zakresu machine learningu i\xA0sztucznej inteligencji oraz stworzenie kilku niebanalnych projektów z\xA0tym związanych.',
     1.4: 'W roku akademickim 2019/2020 stałam się współtwórcą projektu @CHECK, który początkowo miał być tylko projektem “na zaliczenie przedmiotu”, a\xA0ostatecznie stał się tematem publikacji na konferencję EDULEARN20. Program ten współpracował z\xA0czytnikiem legitymacji studenckich i\xA0miał ułatwić prowadzącym zajęcia sprawdzanie obecności – studenci, przy wchodzeniu na zajęcia, rejestrowali się na nich swoją legitymacją i\xA0wskazywali miejsce w sali, które zamierzają zająć. Dzięki temu prowadzący mógł monitorować, kto gdzie siedzi i\xA0mieć jednocześnie sprawdzoną obecność. Oprócz tego program oferował możliwośc dodawania notatek, opcję wybierania spośród kilku trybów sprawdzania obecności oraz eksport list do .xls. Program miał być wdrożony na Wydziale Matematyki i\xA0Informatyki UAM, ostatecznie jednak nie doszło to do skutku.',
+    1.5: 'Swoją drogę zawodową chciałabym związać z programowaniem i, być może, z elementami nauk kognitywnych. Obecnie poszukuję możliwości podjęcia stażu lub praktyk w obszarze IT.',
     2: 'Projekty programistyczne',
     3: 'Milionerzy 1.0',
     4: 'Drobne programy',
@@ -166,4 +167,7 @@ export const STRINGS_PL = {
     161: 'Dlaczego nie lubimy kupowania biletów?',
     162: 'Projekt związany z podróżowaniem pociągami. Polegał na identyfikacji potrzeb użytkowników PKP i napotykanych przez nich trudności przy zakupie biletów oraz omówieniu i przetestowaniu propozycji rozwiązań na te problemy.',
     163: 'Stworzone przy pomocy Adobe inDesign',
+    164: 'informatyka',
+    165: 'studia II stopnia na kierunku:',
+    166: 'rozpoczęcie studiów inżynierskich na kierunku:',
 };
